@@ -1,0 +1,92 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navBarPage{
+  background-color: #374250e0; 
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: green;
+}
+
+.titlePage{
+  font-family: 'Rubik Glitch', system-ui;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+/*NavBar-Animation*/
+
+h2 {
+  position: relative;
+  font-size: 2rem;
+  font-family: sans-serif;
+  -webkit-text-stroke: 0.1vw #383d52;
+  text-transform: uppercase;
+}
+
+.bxs-user{
+  border: solid 1px;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: whitesmoke;
+}
+
+.bxs-user:hover{
+ color: goldenrod;
+}
+
+.bxs-cart{
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #4fed51;
+}
+
+
+.animation::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #4fed51;
+
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #4fed51;
+  overflow: hidden;
+  /* transition:animate 6s linear infinite; */
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  70% {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
