@@ -1,0 +1,21 @@
+
+
+.cart{
+    padding-top: 6rem;
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  
+ img{
+    width: 9rem;
+    object-fit: contain;
+    margin-right: 1rem;
+  }
+  
+  .table-quantity > input{
+    width: 4rem;
+    margin-right: 1rem;
+  }

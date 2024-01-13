@@ -115,7 +115,7 @@ h2 {
   }
   
   .navbar-nav .nav-link.active,
-  .border-red {
+  .border-green {
     border-bottom: 3px solid #4fed51;
   }
   
@@ -420,10 +420,12 @@ text-transform: uppercase;
 }
 
 
+/*error404*/
 
-
-
-
+.titleError404{
+  font-family: 'Rubik Glitch', system-ui;
+  font-size: 6rem;
+}
 
 
 

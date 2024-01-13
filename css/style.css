@@ -79,3 +79,11 @@ video {
 .btn:hover:after, .btn:active:after {
     width: 100%;
 }
+
+.category{
+    margin-top: 5rem;
+}
+
+.bxs-heart{
+    color: #4fed51;
+}
