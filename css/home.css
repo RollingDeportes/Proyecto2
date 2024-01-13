@@ -20,8 +20,23 @@
   margin-right: 3rem;
 }
 
-body {
-  background-color: whitesmoke;
+.title-home{
+  font-family: 'Rubik Glitch', system-ui;
+  font-size: 4rem;
+  margin-top: 6rem;
+  margin-right: 0.5rem;
+  
+            text-shadow:  4px 3px rgba(0, 0, 0, 0.5); /* Sombra: desplazamiento en x, desplazamiento en y, desenfoque, color */
+}
+
+.description-title{
+  font-size: 1.5rem;
+  background-color: green;
+  color: whitesmoke;
+}
+
+.bx-tennis-ball, .bx-football{
+  font-size: 3.5rem;
 }
 
 a:link, a:visited, a:active {
@@ -47,7 +62,7 @@ h2 {
 }
 
 .bxs-user:hover{
- color: goldenrod;
+ color: #4fed51;
 }
 
 .bxs-cart{
@@ -86,9 +101,8 @@ h2 {
 /*Slider*/
 
 .slider{
-    margin-top: 4.5rem;
-  }
-  
+  margin-top: 3rem;
+}
   
   
   /*Products*/
