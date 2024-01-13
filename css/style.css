@@ -1,85 +1,139 @@
-
-
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    max-height: 100vh;
+body {
+  max-height: 100vh;
 }
 
-.rolling{
-    font-size: 10rem;
-    -webkit-text-stroke-width: 5px;
-    -webkit-text-stroke-color: green;
+.rolling {
+  font-size: 10rem;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: green;
 }
 
-.titlePage{
-    font-family: 'Rubik Glitch', system-ui;
-  }
-  
+.titlePage {
+  font-family: 'Rubik Glitch', system-ui;
+}
+
 
 
 
 video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    transform: translateX(calc((100% - 100vw) / 2));
-    z-index: -2;
-    filter: grayscale(100%) brightness(70%) sepia(30%) hue-rotate(180deg);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+  filter: grayscale(100%) brightness(70%) sepia(30%) hue-rotate(180deg);
 }
 
 .btn {
-    border: none;
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    background: none;
-    cursor: pointer;
-  
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
 }
 
 
 .btn {
-    border: 2px solid grey;
-    color: whitesmoke;
+  border: 2px solid grey;
+  color: whitesmoke;
 }
+
 .btn:hover {
-    font-size: 1.2rem;
-    color: whitesmoke;
-}
-.btn::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
-}
-.btn:after {
-    width: 0%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: green;
-}
-.btn:hover:after, .btn:active:after {
-    width: 100%;
+  font-size: 1.2rem;
+  color: whitesmoke;
 }
 
-.category{
-    margin-top: 5rem;
+.btn::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+
+.btn:after {
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: green;
+}
+
+.btn:hover:after,
+.btn:active:after {
+  width: 100%;
+}
+
+.category {
+  margin-top: 5rem;
+}
+
+
+
+
+
+
+/*CSS de search.html y admin.html*/ 
+
+#espacio {
+  margin-top: 200px;
+}
+
+/* Estilos para los formularios y etiquetas de entrada */
+label, input, select, button {
+  margin-bottom: 10px;
+}
+
+/* Estilos para los botones */
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para la tabla */
+.table-container {
+  margin-top: 20px;
+}
+
+.productTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.productTable th, .productTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.productTable th {
+  background-color: #4CAF50;
+  color: white;
 }
