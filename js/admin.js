@@ -4,7 +4,11 @@ addProductButton.addEventListener("submit", function (event) {
     
     const codeProduct = document.querySelector('.code-product').value;
     const imageProduct = document.querySelector('.image-product').value;
+    const imageProduct2 = document.querySelector('.image-product-2').value;
+    const imageProduct3 = document.querySelector('.image-product-3').value;
+    const imageProduct4 = document.querySelector('.image-product-4').value;
     const titleProduct = document.querySelector('.title-product').value;
+    const descriptionProduct = document.querySelector('.description-pageDetail').value;
     const priceProduct = document.querySelector('.price-product').value;
     const categoryProduct = document.querySelector('.category-product').value;
     const typeProduct = document.querySelector('.type-product').value;
@@ -14,7 +18,11 @@ addProductButton.addEventListener("submit", function (event) {
     const newProduct = {
         code: codeProduct,
         image: imageProduct,
+        image2: imageProduct2,
+        image3: imageProduct3,
+        image4: imageProduct4,
         title: titleProduct,
+        description: descriptionProduct,
         price: priceProduct, 
         category: categoryProduct,
         type: typeProduct
@@ -102,7 +110,11 @@ function modifyProduct(code) {
         // Llenar los campos del formulario con la información del producto existente
         document.querySelector('.code-product').value = existingProduct.code;
         document.querySelector('.image-product').value = existingProduct.image;
+        document.querySelector('.image-product-2').value = existingProduct.image2;
+        document.querySelector('.image-product-3').value = existingProduct.image3;
+        document.querySelector('.image-product-4').value = existingProduct.image4;
         document.querySelector('.title-product').value = existingProduct.title;
+        document.querySelector('.description-pageDetail').value = existingProduct.description;
         document.querySelector('.price-product').value = existingProduct.price;
 
         // Eliminar el producto existente del array
