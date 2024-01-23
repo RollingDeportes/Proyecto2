@@ -1,19 +1,21 @@
-* {
+
+
+*{
   margin: 0px;
   padding: 0px;
 }
 
-body {
+body{
   max-height: 100vh;
 }
 
-.rolling {
+.rolling{
   font-size: 10rem;
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: green;
 }
 
-.titlePage {
+.titlePage{
   font-family: 'Rubik Glitch', system-ui;
 }
 
@@ -55,12 +57,10 @@ video {
   border: 2px solid grey;
   color: whitesmoke;
 }
-
 .btn:hover {
   font-size: 1.2rem;
   color: whitesmoke;
 }
-
 .btn::after {
   content: '';
   position: absolute;
@@ -69,7 +69,6 @@ video {
   -moz-transition: all 1s;
   transition: all 1s;
 }
-
 .btn:after {
   width: 0%;
   height: 100%;
@@ -77,63 +76,114 @@ video {
   left: 0;
   background: green;
 }
-
-.btn:hover:after,
-.btn:active:after {
+.btn:hover:after, .btn:active:after {
   width: 100%;
 }
 
-.category {
+.category{
   margin-top: 5rem;
 }
 
-
-
-
-
-
-/*CSS de search.html y admin.html*/ 
-
-#espacio {
-  margin-top: 200px;
+.bxs-heart{
+  color: #4fed51;
 }
 
-/* Estilos para los formularios y etiquetas de entrada */
-label, input, select, button {
-  margin-bottom: 10px;
+
+
+
+/* Filtro */
+  
+  /* Estilos para la sección de filtros */
+  #filterSection {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  #filterSection h2 {
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+/* .box1 {
+    width: 25%;
+    }
+    
+.box2 {
+    width: 75%;
+} */
+
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
 }
 
-/* Estilos para los botones */
-button {
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
+@media (min-width: 775px) {
+  .box1 {
+    width: 25%;
+  }
+  .box2{
+    width: 75%;
+  }
 }
 
-button:hover {
-  background-color: #45a049;
+
+/* Estilo para el contenedor de las tarjetas */
+#productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
 }
 
-/* Estilos para la tabla */
-.table-container {
-  margin-top: 20px;
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
 }
 
-.productTable {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
+
+
+/* Estilo para cada tarjeta de producto */
+.productCard {
+  width: 100%; /* Ajustado el ancho máximo de la tarjeta */
+  margin: auto; /* Añadido margen alrededor de cada tarjeta */
+  padding: 10px; /* Añadido relleno interno para dar espacio a los contenidos */
 }
 
-.productTable th, .productTable td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-.productTable th {
-  background-color: #4CAF50;
-  color: white;
+/* Estilo para la imagen dentro de la tarjeta */
+.productCard img {
+  width: 100%; /* La imagen ocupa el 100% del ancho de la tarjeta */
+  height: auto; /* Altura automática para mantener la proporción original */
 }
