@@ -48,19 +48,12 @@ function applyFilters() {
   const productName = document.getElementById('productName').value.toLowerCase();
   const minPrice = parseFloat(document.getElementById('minPrice').value) || 0;
   const maxPrice = parseFloat(document.getElementById('maxPrice').value) || Infinity;
-
-  const categoryCheckboxes = document.querySelectorAll('.filter-checkbox');
-  const selectedCategories = Array.from(categoryCheckboxes)
-      .filter(checkbox => checkbox.checked)
-      .map(checkbox => checkbox.value);
-
     
   const filteredProducts = getProductsFromLocalStorage().filter(product => {
       const nameMatch = product.title.toLowerCase().includes(productName);
       const priceMatch = product.price >= minPrice && product.price <= maxPrice;
-      const categoryMatch = selectedCategories.length === 0 || selectedCategories.includes(product.category);
 
-      return nameMatch && priceMatch && categoryMatch;
+      return nameMatch && priceMatch;
   });
 
   displayFilteredProducts(filteredProducts);
