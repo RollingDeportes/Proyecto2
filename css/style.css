@@ -88,6 +88,15 @@ video {
   color: #4fed51;
 }
 
+@media only screen and (max-width: 600px) {
+    #mapa {
+      display: none; 
+    }
+  }
+
+.esp{
+    margin-top:2rem;
+}
 
 
 

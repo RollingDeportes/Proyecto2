@@ -291,8 +291,6 @@ margin-top: 3rem;
 }
 
 @media (max-width: 767.5px) {
-
-  
   .navbar-nav .nav-link:hover {
       background-color: #4fed51;
       color: #fff ;
