@@ -64,15 +64,24 @@
                     </ul>
                   </li>
 
-                  <li class="nav-item">
+                  <li class="nav-item d-none" id="CaptureAdminPage">
                     <a class="nav-link text-light" aria-current="page" href="./admin.html">Administracion</a>
                   </li>
-                  
+      
                 </ul>
-                <ul class="nav-item">
-                  <a class="nav-link text-light p-0" aria-current="page" href="#"><i class='bx bxs-user'></i></a>
-                </ul>
-                
+      
+                <ul class="navbar-nav">
+                <li id="btnLogueo"  class="nav-item">
+                  <a class="nav-link text-light" href="./login-register.html?action=login"
+                    >Loguearse</a
+                  >
+                </li>
+                <li id="botonDeslogueo" class="nav-item d-none">
+                  <a class="nav-link text-light"  href="./home.html" onclick="Deslogueo()" 
+                    >Desloguearse</a
+                  >
+                </li> 
+              </ul>
                 <ul class="nav-item">
                   <a class="nav-link text-light p-0 me-4" aria-current="page" href="#"><i class='bx bxs-cart bxs-cart-add'></i></a>
                 </ul>
@@ -160,19 +169,18 @@
               <!-- Mobile App Buttons-->
               <section>
                 <h3 class="widget-title text-center"><i class='bx bxs-news'></i> Newlester</h3>
-                <!--Subscription-->
-              <form class="subscribe-form" action="#" method="post" target="_blank" novalidate="">
-                <div>
-                  <div class="input-group">
-                    <input class="form-control" type="email" name="EMAIL" placeholder="e-mail"><span class="input-group-addon"><i class="icon-mail"></i></span>
-                  </div>
-                  <button class="btn btn-success text-light mt-2" type="submit">Suscbribete</button>
-                </div><span class="form-text text-sm text-white opacity-50">Suscríbase a nuestro boletín para recibir ofertas de descuentos anticipados, las últimas noticias, información sobre ventas y promociones.</span>
-              </form>
-              </section>
-            </div>
-            
-            <div class="col-lg-3 col-md-6">
+   <!--Subscription-->
+          <form class="subscribe-form" action="#" method="post" target="_blank" novalidate="">
+            <div>
+              
+              <a class="btn btn-success text-light mt-2 " href="./login-register.html?action=register">rEGISTRARSE</a>
+            </p>
+            </div><span class="form-text text-sm text-white opacity-50">Suscríbase a nuestro boletín para recibir ofertas de descuentos anticipados, las últimas noticias, información sobre ventas y promociones.</span>
+          </form>
+          </section>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
               <!-- Account / Shipping Info-->
               
             </div>
@@ -205,5 +213,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/cart.js"></script>
+    <script src="../js/Navbar.js"> </script>
 </body>
 </html>
