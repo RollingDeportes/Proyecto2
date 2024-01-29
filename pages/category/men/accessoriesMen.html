@@ -61,18 +61,30 @@
                   </ul>
               </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link text-light" aria-current="page" href="../../admin.html">Administracion</a>
-                  </li>
-                  
-                </ul>
-                <ul class="nav-item">
-                  <a class="nav-link text-light p-0" aria-current="page" href="#"><i class='bx bxs-user'></i></a>
-                </ul>
+              <li class="nav-item d-none" id="CaptureAdminPage">
+                <a class="nav-link text-light" aria-current="page" href="../../admin.html">Administracion</a>
+              </li>
+  
+            </ul>
+  
+            <ul class="navbar-nav">
+            <li id="btnLogueo"  class="nav-item">
+              <a class="nav-link text-light" href="../../login-register.html?action=login"
+                >Loguearse</a
+              >
+            </li>
+            <li id="botonDeslogueo" class="nav-item d-none">
+              <a class="nav-link text-light"  href="../../home.html" onclick="Deslogueo()" 
+                >Desloguearse</a
+              >
+            </li> 
+          </ul>
+  
+          <ul id="carrito" class="nav-item">
+               <a class="nav-link text-light p-0 me-4" aria-current="page" href="../../cart.html"><i
+                  class='bx bxs-cart bx-tada-hover'></i></a>
                 
-                <ul class="nav-item">
-                  <a class="nav-link text-light p-0 me-4" aria-current="page" href="../../cart.html"><i class='bx bxs-cart bx-tada-hover'></i></a>
-                </ul>
+            </ul>
               </div>
             </div>
           </nav>
@@ -478,5 +490,6 @@
     <script src="../../../js/accesoriesProducts.js"></script>
     <script src="../../../js/modal.js"></script>
     <script src="../../../js/product.js"></script>
+    <script src="../../../js/Navbar.js"> </script>
 </body>
 </html>
