@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="./home.html">Home</a>
+              <a class="nav-link  text-light" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
@@ -103,65 +103,110 @@
       </div>
     </nav>
   </header>
-  <main class="container-main">
-    <div class="text-center">
-      <h1 class="display-2 pt-5">Quiénes somos</h1>
-      <p>
-        Somos los integrantes del grupo #3 de la comisión 80I.
-       <br>
-        A continuación les presentamos una breve descripción de cada uno:
-      </p>
-      <hr class="my-5 colorRaya" />
-    </div>
-    <article class="contenedorImg row text-center m-3">
-      <div class="img1 col-md-4 col-sm-12 pt-3">
-        <img class="imgCircular-shadow" src="../img/avatar/facundoAvatar.png" alt="facundoPalacios" width="150" height="150"/>
-        <h5 class="text-center my-3">Facundo Palacios</h5>
-        <p class="text-center">
-          Tengo ... años, soy..., actualmente...
-        </p>
-      </div>
-      <div class="img1 col-md-4 col-sm-12 pt-3">
-        <img class="imgCircular-shadow" src="../img/avatar/agustinaAvatar.jpg" alt="agustinaMoreno" width="150" height="150"/>
-        <h5 class="text-center my-3">Agustina Moreno</h5>
-        <p class="text-center">
-          Tengo años, soy..., actualmente
-        </p>nte
-      </div>
-      <div class="img1 col-md-4 col-sm-12 pt-3">
-        <img class="imgCircular-shadow" src="../img/avatar/javierAvatar.png" alt="javierAguilar" width="150" height="150"/>
-        <h5 class="text-center my-3">Javier Aguilar</h5>
-        <p class="text-center">
-            Tengo ... años, soy..., actualmente...
-        </p>
-      </div>
-    </article>
-    <article class="contenedorImg row text-center m-3">
-      <div class="img1 col-md-4 col-sm-12 pt-3">
-        <img class="imgCircular-shadow" src="../img/avatar/axelAvatar.png" alt="axelOntiveros" width="150" height="150"/>
-        <h5 class="text-center my-3">Axel Ontiveros</h5>
-        <p class="text-center">
-            Tengo ... años, soy..., actualmente...
-        </p>
-      </div>
-        <div class="img1 col-md-4 col-sm-12 pt-3">
-          <img class="imgCircular-shadow" src="../img/avatar/martinAvatar.png" alt="martin..." width="150" height="150"/>
-          <h5 class="text-center my-3">Martin</h5>
-          <p class="text-center">
-            Tengo ... años, soy..., actualmente...
-          </p>
+  <main class="esp">
+    <section class="container-fluid esp py-1 py-md-5">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 my-3 my-md-0">
+            <form class="px-2 mx-2">
+              <div class="mb-3">
+                <div>
+                  <h1>Contáctanos</h1>
+                  <p>
+                    Describe el motivo para contactarnos y facilita tu
+                    información de contacto:
+                  </p>
+                </div>
+                <label for="nombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  pattern="[A-Za-z]+"
+                  placeholder="Nombre"
+                  minlength="3"
+                  maxlength="30"
+                  required
+                />
+                <label for="apellido" class="form-label">Apellido</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellido"
+                  pattern="[A-Za-z]+"
+                  placeholder="Apellido"
+                  minlength="2"
+                  maxlength="30"
+                  required
+                />
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="ejemplo@mail.com"
+                  minlength="10"
+                  maxlength="40"
+                  required
+                />
+
+                <div class="mb-3">
+                  <label for="select" class="form-label">Asunto</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="select"
+                    required
+                  >
+                    <option value="">Seleccione un asunto</option>
+                    <option value="1">Ropa</option>
+                    <option value="2">Calzado</option>
+                    <option value="3">Accesorios</option>
+                    <option value="4">Otros</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Comentario</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Ingrese su comentario"
+                  minlength="20"
+                  maxlength="200"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                  required
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Acepto los
+                  <a href="#">términos y condiciones</a></label
+                >
+              </div>
+              <button type="submit" class="btn-success p-2 rounded-3 px-3">Enviar</button>
+            </form>
+          </div>
+          <div class="col-sm-12 col-md-6 my-3 my-md-0">
+            <div class="px-2 mx-2">
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.105916739557!2d-65.207167!3d-26.836583299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1705431383170!5m2!1ses!2sar" allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="border border-dark border-2 rounded w-100"
+                height="600" width="100%"></iframe>
+            </div>
+          </div>
         </div>
-      <div class="img1 col-md-4 col-sm-12 pt-3">
-        <img class="imgCircular-shadow" src="../img/avatar/maximilianoMorey.png" alt="aleMendoza" width="150" height="150"/>
-        <h5 class="text-center my-3">Ale Mendoza</h5>
-        <p class="text-center">
-            Tengo ... años, soy..., actualmente...
-        </p>
-      </div>
-    </article>
-    <hr class="my-5 colorRaya" />>
-  
-   </main>
+      </section>
+    </main>
 
 
  <!--Footer-->
@@ -190,7 +235,7 @@
         <section>
           <h3 class="widget-title text-center">Sobre Nosotros</h3> 
             <div class="mb-2 text-center"><a href="./About-US.html" class="btn link-footer border rounded-3 p-2">> Acerca de nosotros <</a></div>
-            <div class="text-center"><a href="./contact.html" class="btn link-footer border rounded-3 p-2">-- Formulario de contacto --</a></div>      
+            <div class="text-center"><a href="#" class="btn link-footer border rounded-3 p-2">-- Formulario de contacto --</a></div>      
         </section>
       </div>
       <div class="col-lg-4 col-md-6 mb-5">
