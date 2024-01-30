@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
                 </td>
                 <td class="table-quantity">
                     <input type="number" min="1" value="1">
-                    <button class="delete btn btn-danger">X</button>
+                    <button class="delete btn-danger rounded-3 px-3">X</button>
                 </td>
             `;
 
