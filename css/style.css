@@ -95,7 +95,7 @@
     }
   
   .esp{
-      margin-top:2rem;
+      margin-top:3rem;
   }
   
   
@@ -139,10 +139,10 @@
       border: none;
       cursor: pointer;
     }
-    
-    button:hover {
+    /* barra verde en slider del home */
+    /* button:hover {
       background-color: #45a049;
-    }
+    } */
     
   
   /* .box1 {

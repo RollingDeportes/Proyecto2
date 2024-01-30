@@ -115,64 +115,414 @@
               </div>
           </nav>
           <div class="row productCardContainer">
-              <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-                  <div class="product">
-                      <img src="../../../img/products/hombres/ropa/productExample5/imagen-1.jpg" alt="Remera Nike Dri-Fit">
+            <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+            data-aos="zoom-in">
+            <div class="product">
+              <img src="../../../img/products/hombres/ropa/productExample1/imagen-1.jpg"
+                  alt="Camiseta Historica Boca Juniors">
+            </div>
+            <div class="tag bg-red">sale</div>
+            <div class="title pt-4 pb-1">Camiseta Historica Boca Juniors</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">$ 109.999</div>
+            <button class="bg-success text-light border rounded-3 p-2" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Ver detalles</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="card">
+                    <div class="row g-0">
+                      <div class="col-md-6 border-end">
+                        <div class="d-flex flex-column justify-content-center">
+                          <div class="main_image"> <img class="card-image"
+                            src="../../../img/products/hombres/ropa/productExample1/imagen-1.jpg"                                  
+                            id="main_product_image" 
+                            width="350"> </div>
+                          <div class="thumbnail_images">
+                            <ul id="thumbnail">
+                              <li><img onclick="changeImage(this)"
+                                src="../../../img/products/hombres/ropa/productExample1/imagen-1.jpg"                                      
+                                width="70"></li>
+                              <li><img onclick="changeImage(this)"
+                                src="../../../img/products/hombres/ropa/productExample1/imagen-2.jpg"                                      
+                                width="70"></li>
+                              <li><img onclick="changeImage(this)"
+                                src="../../../img/products/hombres/ropa/productExample1/imagen-3.jpg"                                      
+                                width="70"></li>
+                              <li><img onclick="changeImage(this)"
+                                src="../../../img/products/hombres/ropa/productExample1/imagen-4.jpg"                                      
+                                width="70"></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3 right-side">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Camiseta Historica Boca Juniors</h3>
+                          </div>
+                          <div class="mt-2 pr-3 content">
+                            <p>A 110 años de su primer partido en primera división, esta camiseta adidas de fútbol
+                              recrea la camiseta que Boca Juniors lució en 1913. Mientras la banda amarilla puede
+                              sonarnos familiar y actual, el cuello en V es definitivamente un guiño al pasado. La
+                              ausencia del escudo del equipo es otro detalle retro, pero para aquellos que quieren
+                              lucirlo, podrán encontrar un escudo moderno en la etiqueta conmemorativa.
+
+                              Al menos un 70 % de este producto está hecho de una mezcla de materiales reciclados y
+                              renovables.</p>
+                          </div>
+                          <h3 class="card-price">$ 109.999</h3>
+                          <div class="ratings d-flex flex-row align-items-center">
+                            <div class="d-flex flex-row"> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                                id="star"></i> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                                id="star"></i> <i class='bx bxs-star' id="star"></i> </div> <span>441
+                              reviews</span>
+                          </div>
+                          <div class="size">
+                            <select class="card-size">
+                              <option>Size : S</option>
+                              <option>Size : M</option>
+                              <option>Size : L</option>
+                              <option>Size : XL</option>
+                            </select>
+                            <div class="buttons d-flex flex-row mt-5 gap-3"> <button
+                                class="btn-success p-2 rounded-3 buy">Comprar</button> <button
+                                class="btn-warning p-2 rounded-3 addToCart">Agregar al carrito</button>
+                               </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="tag bg-red">sale</div>
-                  <div class="title pt-4 pb-1">Remera Nike Dri-Fit</div>
-                  <div class="d-flex align-content-center justify-content-center">
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                  </div>
-                  <div class="price">$ 12.199</div>
+                </div>
               </div>
-              <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-                  <div class="product">
-                     <img src="../../../img/products/hombres/ropa/productExample6/imagen-1.jpg" alt="Remera Nike Sportswear"></a>
-                  </div>
-                  <div class="title pt-4 pb-1">Remera Nike Sportswear</div>
-                  <div class="d-flex align-content-center justify-content-center">
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                  </div>
-                  <div class="price">$ 20.400</div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+          data-aos="zoom-in">
+          <div class="product">
+            <img src="../../../img/products/hombres/ropa/productExample2/imagen-1.jpg"
+                alt="Camiseta Historica River Plate">
+          </div>
+          <div class="tag bg-black">out of stock</div>
+          <div class="title pt-4 pb-1">Camiseta Historica River Plate</div>
+          <div class="d-flex align-content-center justify-content-center">
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+          </div>
+          <div class="price">$ 109.999</div>
+          <button class="bg-success text-light border rounded-3 p-2" data-bs-toggle="modal"
+            data-bs-target="#exampleModal2">Ver detalles</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-                  <div class="product">
-                      <img src="../../../img/products/hombres/ropa/productExample7/imagen-1.webp" alt="Remera Puma Power Colorblock Tee Casual Moda Urbano"></a>
+              <div class="modal-body">
+                <div class="card">
+                  <div class="row g-0">
+                    <div class="col-md-6 border-end">
+                      <div class="d-flex flex-column justify-content-center">
+                        <div class="main_image"> <img class="card-image"
+                          src="../../../img/products/hombres/ropa/productExample2/imagen-1.jpg"                                
+                          id="main_product_image" 
+                          width="350"> </div>
+                        <div class="thumbnail_images">
+                          <ul id="thumbnail">
+                            <li><img onclick="changeImage(this)"
+                              src="../../../img/products/hombres/ropa/productExample2/imagen-1.jpg"                                    
+                              width="70"></li>
+                            <li><img onclick="changeImage(this)"
+                              src="../../../img/products/hombres/ropa/productExample2/imagen-2.jpg"                                    
+                              width="70"></li>
+                            <li><img onclick="changeImage(this)"
+                              src="../../../img/products/hombres/ropa/productExample2/imagen-3.jpg"                                    
+                              width="70"></li>
+                            <li><img onclick="changeImage(this)"
+                              src="../../../img/products/hombres/ropa/productExample2/imagen-4.jpg"                                    
+                              width="70"></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="p-3 right-side">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h3 class="card-title">Camiseta Historica River Plate</h3>
+                        </div>
+                        <div class="mt-2 pr-3 content">
+                          <p>No muchos equipos pueden reconocerse tan fácilmente. Gracias a la famosa banda roja,
+                            River Plate es uno de ellos. Celebrando la primera victoria del equipo y el asenso a
+                            primera división en 1908, esta camiseta adidas se mete a fondo en la historia del club.
+                            Creada con cierres de botones, incluye un pequeño detalle de una bandera dentro de la
+                            solapa que da el toque final.
+
+                            Nuestros productos de algodón apoyan el cultivo de algodón sostenible.</p>
+                        </div>
+                        <h3 class="card-price">$ 109.999</h3>
+                        <div class="ratings d-flex flex-row align-items-center">
+                          <div class="d-flex flex-row"> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                              id="star"></i> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                              id="star"></i> <i class='bx bxs-star' id="star"></i> </div> <span>441
+                            reviews</span>
+                        </div>
+                        <div class="size">
+                          <select class="card-size">
+                            <option>Size : S</option>
+                            <option>Size : M</option>
+                            <option>Size : L</option>
+                            <option>Size : XL</option>
+                          </select>
+                          <div class="buttons d-flex flex-row mt-5 gap-3"> <button
+                            class="btn-success p-2 rounded-3 buy">Comprar</button> <button
+                            class="buttonCart btn-warning p-2 rounded-3 addToCart">Agregar al carrito</button>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="tag bg-black">out of stock</div>
-                  <div class="title pt-4 pb-1">Remera Puma Power Colorblock</div>
-                  <div class="d-flex align-content-center justify-content-center">
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                  </div>
-                  <div class="price">$ 59.999</div>
+                </div>
               </div>
-              <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-                  <div class="product">
-                      <img src="../../../img/products/hombres/ropa/productExample8/imagen-8.webp" alt="Pantalon Hombre Puma Essential Logo"></a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+        data-aos="zoom-in">
+        <div class="product">
+          <img src="../../../img/products/hombres/ropa/productExample3/imagen-1.webp" alt="Nike DriFit">
+        </div>
+        <div class="tag bg-green">new</div>
+        <div class="title pt-4 pb-1">Nike DriFit</div>
+        <div class="d-flex align-content-center justify-content-center">
+          <span class="fas fa-star"></span>
+          <span class="fas fa-star"></span>
+          <span class="fas fa-star"></span>
+          <span class="fas fa-star"></span>
+          <span class="fas fa-star"></span>
+        </div>
+        <div class="price">$ 38.499</div>
+        <button class="bg-success text-light border rounded-3 p-2" data-bs-toggle="modal"
+          data-bs-target="#exampleModal3">Ver detalles</button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card">
+                <div class="row g-0">
+                  <div class="col-md-6 border-end">
+                    <div class="d-flex flex-column justify-content-center">
+                      <div class="main_image"> <img class="card-image"
+                          src="../../../img/products/hombres/ropa/productExample3/imagen-1.webp"
+                          id="main_product_image" width="350"> </div>
+                      <div class="thumbnail_images">
+                        <ul id="thumbnail">
+                          <li><img onclick="changeImage(this)"
+                              src="../../../img/products/hombres/ropa/productExample3/imagen-1.webp"
+                              width="70"></li>
+                          <li><img onclick="changeImage(this)"
+                              src="../../../img/products/hombres/ropa/productExample3/imagen-2.webp"
+                              width="70"></li>
+                          <li><img onclick="changeImage(this)"
+                              src="../../../img/products/hombres/ropa/productExample3/imagen-3.webp"
+                              width="70"></li>
+                          <li><img onclick="changeImage(this)"
+                              src="../../../img/products/hombres/ropa/productExample3/imagen-4.webp"
+                              width="70"></li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                  <div class="title pt-4 pb-1">Pantalon Hombre Puma Essential Logo</div>
-                  <div class="d-flex align-content-center justify-content-center">
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
-                      <span class="fas fa-star"></span>
+                  <div class="col-md-6">
+                    <div class="p-3 right-side">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="card-title">Nike DriFit</h3>
+                      </div>
+                      <div class="mt-2 pr-3 content">
+                        <p>Solo estilo vintage. Haz de tu carrera un regreso con el logotipo clásico de esta remera absorbente de sudor.
+                          Beneficios
+                          •La tecnología Nike Dri-FIT absorbe el sudor de la piel para acelerar la evaporación, lo que ayuda a mantener la transpirabilidad y la comodidad.
+                          •La tela tejida se siente suave y tersa.
+                          
+                          Datos del producto
+                          •52-59% algodón, 41-48% poliéster
+                          •El porcentaje del material puede variar. Comprueba en la etiqueta su composición real.
+                          •Lavar a máquina
+                          •Producto importado</p>
+                      </div>
+                      <h3 class="card-price">$ 38.499</h3>
+                      <div class="ratings d-flex flex-row align-items-center">
+                        <div class="d-flex flex-row"> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                            id="star"></i> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                            id="star"></i> <i class='bx bxs-star' id="star"></i> </div> <span>441
+                          reviews</span>
+                      </div>
+                      <div class="size">
+                        <select class="card-size">
+                          <option>Size : S</option>
+                          <option>Size : M</option>
+                          <option>Size : L</option>
+                          <option>Size : XL</option>
+                        </select>
+                        <div class="buttons d-flex flex-row mt-5 gap-3"> <button
+                          class="btn-success p-2 rounded-3 buy">Comprar</button> <button
+                          class="btn-warning p-2 rounded-3 addToCart">Agregar al carrito</button>
+                         </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="price">$ 29.999</div>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+      data-aos="zoom-in">
+      <div class="product">
+        <img src="../../../img/products/hombres/ropa/productExample4/imagen-1.webp" alt="Nike Sportswear">
+      </div>
+      <div class="title pt-4 pb-1">Nike Sportswear</div>
+      <div class="d-flex align-content-center justify-content-center">
+        <span class="fas fa-star"></span>
+        <span class="fas fa-star"></span>
+        <span class="fas fa-star"></span>
+        <span class="fas fa-star"></span>
+        <span class="fas fa-star"></span>
+      </div>
+      <div class="price">$ 48.799</div>
+      <button class="bg-success text-light border rounded-3 p-2" data-bs-toggle="modal"
+        data-bs-target="#exampleModal4">Ver detalles</button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-6 border-end">
+                  <div class="d-flex flex-column justify-content-center">
+                    <div class="main_image"> <img class="card-image"
+                        src="../../../img/products/hombres/ropa/productExample4/imagen-1.webp"
+                        id="main_product_image" width="350"> </div>
+                    <div class="thumbnail_images">
+                      <ul id="thumbnail">
+                        <li><img onclick="changeImage(this)"
+                          src="../../../img/products/hombres/ropa/productExample4/imagen-1.webp"
+                          width="70"></li>
+                        <li><img onclick="changeImage(this)"
+                          src="../../../img/products/hombres/ropa/productExample4/imagen-2.webp"
+                           width="70"></li>
+                        <li><img onclick="changeImage(this)"
+                          src="../../../img/products/hombres/ropa/productExample4/imagen-3.webp"
+                            width="70"></li>
+                        <li><img onclick="changeImage(this)"
+                          src="../../../img/products/hombres/ropa/productExample4/imagen-4.webp"
+                            width="70"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-3 right-side">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h3 class="card-title">Nike Sportswear</h3>
+                    </div>
+                    <div class="mt-2 pr-3 content">
+                      <p>Impecable y liso con gráficos Nike estilizados, esta playera de algodón ligera es perfecta para el uso diario informal. Diseñada para sentirse relajada en el pecho y el cuerpo para brindar un ajuste atlético que puedes usar en capas.
+                        Datos del producto
+                        
+                        Cuello de tela de canalé
+                        100% algodón
+                        Lavar a máquina
+                        Producto importado</p>
+                    </div>
+                    <h3 class="card-price">$ 48.799</h3>
+                    <div class="ratings d-flex flex-row align-items-center">
+                      <div class="d-flex flex-row"> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                          id="star"></i> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                          id="star"></i> <i class='bx bxs-star' id="star"></i> </div> <span>441
+                        reviews</span>
+                    </div>
+                    <div class="size">
+                      <select class="card-size">
+                        <option>Size : S</option>
+                        <option>Size : M</option>
+                        <option>Size : L</option>
+                        <option>Size : XL</option>
+                      </select>
+                      <div class="buttons d-flex flex-row mt-5 gap-3"> <button
+                        class="btn-success p-2 rounded-3 buy">Comprar</button> <button
+                        class="btn-warning p-2 rounded-3 addToCart">Agregar al carrito</button>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
           </div>
 
 
