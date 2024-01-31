@@ -27,7 +27,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="./home.html">Home</a>
+                    <a class="nav-link text-light" aria-current="page" href="./home.html">Home</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,16 +60,29 @@
                     </ul>
                   </li>
 
-                  <li class="nav-item">
+                  <li class="nav-item d-none" id="CaptureAdminPage">
                     <a class="nav-link text-light" aria-current="page" href="./admin.html">Administracion</a>
                   </li>
+      
                 </ul>
-                <ul class="nav-item">
-                  <a class="nav-link text-light p-0" aria-current="page" href="#"><i class='bx bxs-user'></i></a>
-                </ul>
-                
-                <ul class="nav-item">
-                  <a class="nav-link text-light p-0 me-4" aria-current="page" href="./cart.html"><i class='bx bxs-cart bx-tada-hover'></i></a>
+      
+                <ul class="navbar-nav ">
+                <li id="btnLogueo"  class="nav-item ">
+                  <a class="nav-link text-light" href="./login-register.html?action=login"
+                    >Loguearse</a
+                  >
+                </li>
+                <li id="botonDeslogueo" class="nav-item d-none">
+                  <a class="nav-link text-light"  href="./home.html" onclick="Deslogueo()" 
+                    >Desloguearse</a
+                  >
+                </li> 
+              </ul>
+      
+              <ul id="carrito" class="nav-item">
+                   <a class="nav-link text-light p-0 me-4" aria-current="page" href="./cart.html"><i
+                      class='bx bxs-cart bx-tada-hover'></i></a>
+                    
                 </ul>
               </div>
             </div>
@@ -124,7 +137,7 @@
             <!-- About Us-->
             <section>
               <h3 class="widget-title text-center">Sobre Nosotros</h3> 
-                <div class="mb-2 text-center"><a href="#" class="btn link-footer border rounded-3 p-2">> Acerca de nosotros <</a></div>
+                <div class="mb-2 text-center"><a href="./About-US.html" class="btn link-footer border rounded-3 p-2">> Acerca de nosotros <</a></div>
                 <div class="text-center"><a href="./contact.html" class="btn link-footer border rounded-3 p-2">-- Formulario de contacto --</a></div>      
             </section>
           </div>
@@ -132,19 +145,18 @@
             <!-- Mobile App Buttons-->
             <section>
               <h3 class="widget-title text-center"><i class='bx bxs-news'></i> Newlester</h3>
-              <!--Subscription-->
-            <form class="subscribe-form" action="#" method="post" target="_blank" novalidate="">
-              <div>
-                <div class="input-group">
-                  <input class="form-control" type="email" name="EMAIL" placeholder="e-mail"><span class="input-group-addon"><i class="icon-mail"></i></span>
-                </div>
-                <button class="btn btn-success text-light mt-2" type="submit">Suscbribete</button>
-              </div><span class="form-text text-sm text-white opacity-50">Suscríbase a nuestro boletín para recibir ofertas de descuentos anticipados, las últimas noticias, información sobre ventas y promociones.</span>
-            </form>
-            </section>
-          </div>
-          
-          <div class="col-lg-3 col-md-6">
+             <!--Subscription-->
+        <form class="subscribe-form" action="#" method="post" target="_blank" novalidate="">
+          <div>
+            
+            <a class="btn btn-success text-light mt-2 " href="./login-register.html?action=register">rEGISTRARSE</a>
+          </p>
+          </div><span class="form-text text-sm text-white opacity-50">Suscríbase a nuestro boletín para recibir ofertas de descuentos anticipados, las últimas noticias, información sobre ventas y promociones.</span>
+        </form>
+        </section>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
             <!-- Account / Shipping Info-->
             
           </div>
@@ -165,5 +177,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/Navbar.js"> </script>
 </body>
 </html>

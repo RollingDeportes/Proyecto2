@@ -11,7 +11,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/cart.css">
     <title>Rooling Sports</title>
 </head>
 
@@ -38,9 +37,9 @@
                       Mujeres
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="./category/women/clothesWomen.html">Ropa</a></li>
-                      <li><a class="dropdown-item" href="./category/women/shoesWomen.html">Calzado</a></li>
-                      <li><a class="dropdown-item" href="./category/women/accessoriesWomen.html">Accesorios</a></li>
+                      <li><a class="dropdown-item" href="#">Ropa</a></li>
+                      <li><a class="dropdown-item" href="#">Calzado</a></li>
+                      <li><a class="dropdown-item" href="#">Accesorios</a></li>
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
@@ -64,26 +63,17 @@
                     </ul>
                   </li>
 
-                  <li class="nav-item d-none" id="CaptureAdminPage">
+                  <li class="nav-item">
                     <a class="nav-link text-light" aria-current="page" href="./admin.html">Administracion</a>
                   </li>
-      
+                  
                 </ul>
-      
-                <ul class="navbar-nav">
-                <li id="btnLogueo"  class="nav-item">
-                  <a class="nav-link text-light" href="./login-register.html?action=login"
-                    >Loguearse</a
-                  >
-                </li>
-                <li id="botonDeslogueo" class="nav-item d-none">
-                  <a class="nav-link text-light"  href="./home.html" onclick="Deslogueo()" 
-                    >Desloguearse</a
-                  >
-                </li> 
-              </ul>
                 <ul class="nav-item">
-                  <a class="nav-link text-light p-0 me-4" aria-current="page" href="#"><i class='bx bxs-cart bxs-cart-add'></i></a>
+                  <a class="nav-link text-light p-0" aria-current="page" href="#"><i class='bx bxs-user'></i></a>
+                </ul>
+                
+                <ul class="nav-item">
+                  <a class="nav-link text-light p-0 me-4" aria-current="page" href="./cart.html"><i class='bx bxs-cart bx-tada-hover'></i></a>
                 </ul>
                 
                 
@@ -93,47 +83,48 @@
             </div>
           </nav>
     </header>
+
     <main>
-
-        
-
-
-     <!--Table-->
-
-     <section class="cart">
-        <div class="my-5 text-center">
-          <h1 class="navbar-brand text-uppercase fw-800"><span
-            class="border-green pe-2">Carrito</span></h1>
-            <hr>
-        </div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Productos</th>
-              <th scope="col">Talle</th>
-              <th scope="col">Precio</th>
-              <th scope="col">Cantidad</th>
-            </tr>
-          </thead>
-          <tbody class="tbody">
-            
-          </tbody>
-        </table>
-        <div class="row mx-4 my-5">
-          <div class="col">
-            <h3 class="itemCarTotal">Total: $ 0</h3>
-          </div>
-          <div class="col d-flex justify-content-end "> 
-           <a href="./error404.html"><button class="btn-success rounded-3 px-3"  >Comprar</button></a>
-          </div>
+      <section class="bg-products category">
+        <div class="container mt-2">
+          <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <div class="container-fluid p-0">
+              <a class="navbar-brand text-uppercase fw-800" href="#"><span class="border-green pe-2">Búsqueda</span>Avanzada</a>
+            </div>
+          </nav>
         </div>
       </section>
 
-
-
-        
+      <section>
+        <div class="content d-flex align-items-center justify-content-center">
+          <div class="container">
+            <div class="row">
+              <div class="box1 category_list d-flex flex-column align-items-center my-3">
+                <div id="filterSection">
+                  <h1>Búsqueda de Productos</h1>
+                  <div>
+                      <label for="productName">Nombre del Producto:</label>
+                      <input type="text" id="productName" class="filter-input">
+          
+                      <label for="minPrice">Precio Mínimo:</label>
+                      <input type="number" id="minPrice" class="filter-input">
+          
+                      <label for="maxPrice">Precio Máximo:</label>
+                      <input type="number" id="maxPrice" class="filter-input">
+          
+                      <button id="applyFilters">Aplicar Filtros</button>
+                  </div>
+                </div>
+              </div>
+              <div class="box2 row d-flex" id="products">
+                <div id="productListContainer" class="productContainer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
 
 
       <!--Footer-->
@@ -161,7 +152,7 @@
               <!-- About Us-->
               <section>
                 <h3 class="widget-title text-center">Sobre Nosotros</h3> 
-                  <div class="mb-2 text-center"><a href="./About-US.html" class="btn link-footer border rounded-3 p-2">> Acerca de nosotros <</a></div>
+                  <div class="mb-2 text-center"><a href="#" class="btn link-footer border rounded-3 p-2">> Acerca de nosotros <</a></div>
                   <div class="text-center"><a href="#" class="btn link-footer border rounded-3 p-2">-- Formulario de contacto --</a></div>      
               </section>
             </div>
@@ -169,18 +160,19 @@
               <!-- Mobile App Buttons-->
               <section>
                 <h3 class="widget-title text-center"><i class='bx bxs-news'></i> Newlester</h3>
-   <!--Subscription-->
-          <form class="subscribe-form" action="#" method="post" target="_blank" novalidate="">
-            <div>
-              
-              <a class="btn btn-success text-light mt-2 " href="./login-register.html?action=register">rEGISTRARSE</a>
-            </p>
-            </div><span class="form-text text-sm text-white opacity-50">Suscríbase a nuestro boletín para recibir ofertas de descuentos anticipados, las últimas noticias, información sobre ventas y promociones.</span>
-          </form>
-          </section>
-        </div>
-        
-        <div class="col-lg-3 col-md-6">
+                <!--Subscription-->
+              <form class="subscribe-form" action="#" method="post" target="_blank" novalidate="">
+                <div>
+                  <div class="input-group">
+                    <input class="form-control" type="email" name="EMAIL" placeholder="e-mail"><span class="input-group-addon"><i class="icon-mail"></i></span>
+                  </div>
+                  <button class="btn btn-success text-light mt-2" type="submit">Suscbribete</button>
+                </div><span class="form-text text-sm text-white opacity-50">Suscríbase a nuestro boletín para recibir ofertas de descuentos anticipados, las últimas noticias, información sobre ventas y promociones.</span>
+              </form>
+              </section>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
               <!-- Account / Shipping Info-->
               
             </div>
@@ -212,7 +204,6 @@
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../js/cart.js"></script>
-    <script src="../js/Navbar.js"> </script>
+    <script src="../js/addProduct/addProduct.js"></script>
 </body>
 </html>
