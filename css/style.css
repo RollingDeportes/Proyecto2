@@ -198,10 +198,99 @@
   }
 
 
+/* Filtro */
+  
+  /* Estilos para la sección de filtros */
+  #filterSection {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  #filterSection h2 {
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+/* .box1 {
+    width: 25%;
+    }
+    
+.box2 {
+    width: 75%;
+} */
+
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
+}
+
+@media (min-width: 775px) {
+  .box1 {
+    width: 25%;
+  }
+  .box2{
+    width: 75%;
+  }
+}
+
+
+/* Estilo para el contenedor de las tarjetas */
+#productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
+}
+
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
+}
 
 
 
+/* Estilo para cada tarjeta de producto */
+.productCard {
+  width: 100%; /* Ajustado el ancho máximo de la tarjeta */
+  margin: auto; /* Añadido margen alrededor de cada tarjeta */
+  padding: 10px; /* Añadido relleno interno para dar espacio a los contenidos */
+}
 
-
-
-
+/* Estilo para la imagen dentro de la tarjeta */
+.productCard img {
+  width: 100%; /* La imagen ocupa el 100% del ancho de la tarjeta */
+  height: auto; /* Altura automática para mantener la proporción original */
+}

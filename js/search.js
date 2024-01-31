@@ -77,3 +77,4 @@ document.addEventListener('DOMContentLoaded', function () {
   function getProductsFromLocalStorage() {
     return JSON.parse(localStorage.getItem('productAdded')) || [];
   }
+
