@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function (event) {
     // Obtener referencia al tbody de la tabla
     const tbody = document.querySelector('.tbody');

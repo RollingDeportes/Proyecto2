@@ -21,8 +21,6 @@ if (currentPage === 'shoesMen') {
 // Función para mostrar las tarjetas de productos en el contenedor
 function displayProductCards() {
   const container = document.querySelector('.productCardContainer');
-
-  
   
   filteredProducts.forEach(product => {
     const card = document.createElement('div');

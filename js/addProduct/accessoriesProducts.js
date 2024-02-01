@@ -14,15 +14,12 @@ if (currentPage === 'accessoriesMen') {
 } else if (currentPage === 'accessoriesKids') {
   filteredProducts = storedProducts.filter(product => ( product.category.includes('Niños') && (product.type.includes('Accesorios')) ));
 } else {
-  // Página no reconocida o sin categoría específica
   console.error('Página no reconocida o sin categoría específica.', currentPage);
 }
 
 // Función para mostrar las tarjetas de productos en el contenedor
 function displayProductCards() {
   const container = document.querySelector('.productCardContainer');
-
-  
   
   filteredProducts.forEach(product => {
     const card = document.createElement('div');

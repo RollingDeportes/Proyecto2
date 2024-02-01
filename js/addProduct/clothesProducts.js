@@ -1,5 +1,3 @@
-
-
 // Obtener el nombre de la página actual
 const currentPage = window.location.pathname.split('/').pop().split('.')[0];
 
