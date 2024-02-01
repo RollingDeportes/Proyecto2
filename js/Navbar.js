@@ -12,8 +12,6 @@ function CaptureAdminPage1(){
   if( UserLog.role === "administrador"){
     carrito.className="nav-item d-none";
     captureAdminPage.className="nav-item";
-    
-    
   }
   
  }
@@ -25,7 +23,6 @@ btnDeslogueo();
   if(UserLog !== undefined){
     btnLogueo.className="nav-item d-none";
     botonDeslogueo1.className="nav-item";
-
   }
 
  }
@@ -35,4 +32,3 @@ btnDeslogueo();
   sessionStorage.removeItem("userLog");
   window.location.replace("../index.html");
  }
-

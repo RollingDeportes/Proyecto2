@@ -1,15 +1,14 @@
 const row = document.querySelector('.row');
 
-    // Obtener la información del producto desde el localStorage
-    let products = JSON.parse(localStorage.getItem('productAdded')) || [];
+// Obtener la información del producto desde el localStorage
+let products = JSON.parse(localStorage.getItem('productAdded')) || [];
 
-        // Crear filas para cada producto
-       
-        products.forEach(function (product, index) {
-            
-                let newRow = document.createElement('div');
-            newRow.className = "col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3 text-center"
-            newRow.innerHTML = `
+// Crear filas para cada producto
+products.forEach(function (product, index) {
+
+  let newRow = document.createElement('div');
+  newRow.className = "col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3 text-center"
+  newRow.innerHTML = `
             <div>
                 <div class="product">
                     <img src="${product.image}"
@@ -102,9 +101,8 @@ const row = document.querySelector('.row');
 
 
             `;
-           
-            // Agregar la nueva fila al tbody
-            row.appendChild(newRow);
-            
-            
-        });
+
+  // Agregar la nueva fila al tbody
+  row.appendChild(newRow);
+
+});

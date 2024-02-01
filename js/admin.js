@@ -1,7 +1,7 @@
 const addProductButton = document.querySelector('.addProduct');
 
 addProductButton.addEventListener("submit", function (event) {
-    
+
     const codeProduct = document.querySelector('.code-product').value;
     const imageProduct = document.querySelector('.image-product').value;
     const imageProduct2 = document.querySelector('.image-product-2').value;
@@ -23,7 +23,7 @@ addProductButton.addEventListener("submit", function (event) {
         image4: imageProduct4,
         title: titleProduct,
         description: descriptionProduct,
-        price: priceProduct, 
+        price: priceProduct,
         category: categoryProduct,
         type: typeProduct
     };
@@ -36,22 +36,15 @@ addProductButton.addEventListener("submit", function (event) {
 });
 
 
-
-
-
-
-
-
-
 const tbody = document.querySelector('.tbody');
 
-    // Obtener la información del producto desde el localStorage
-    let products = JSON.parse(localStorage.getItem('productAdded')) || [];
+// Obtener la información del producto desde el localStorage
+let products = JSON.parse(localStorage.getItem('productAdded')) || [];
 
-        // Crear filas para cada producto
-        products.forEach(function (product, index) {
-            let newRow = document.createElement('tr');
-            newRow.innerHTML = `
+// Crear filas para cada producto
+products.forEach(function (product, index) {
+    let newRow = document.createElement('tr');
+    newRow.innerHTML = `
             <th scope="row">${product.code}</th>
             <td class="table-products">
                 
@@ -69,36 +62,35 @@ const tbody = document.querySelector('.tbody');
             </td>
             `;
 
-            // Agregar la nueva fila al tbody
-            tbody.appendChild(newRow);
-        });
+    // Agregar la nueva fila al tbody
+    tbody.appendChild(newRow);
+});
 
-         // Agregar manejador de eventos para los botones de eliminación
-         tbody.addEventListener('click', function (event) {
-            const target = event.target;
+// Agregar manejador de eventos para los botones de eliminación
+tbody.addEventListener('click', function (event) {
+    const target = event.target;
 
-            if (target.classList.contains('delete')) {
-                // Obtener la fila a la que pertenece el botón
-                const row = target.closest('tr');
+    if (target.classList.contains('delete')) {
+        // Obtener la fila a la que pertenece el botón
+        const row = target.closest('tr');
 
-                // Obtener el índice de la fila
-                const rowIndex = Array.from(row.parentNode.children).indexOf(row);
+        // Obtener el índice de la fila
+        const rowIndex = Array.from(row.parentNode.children).indexOf(row);
 
-                // Eliminar el producto del array y actualizar el localStorage
-                products.splice(rowIndex, 1);
-                localStorage.setItem('productAdded', JSON.stringify(products));
+        // Eliminar el producto del array y actualizar el localStorage
+        products.splice(rowIndex, 1);
+        localStorage.setItem('productAdded', JSON.stringify(products));
 
-                // Eliminar la fila visualmente
-                row.remove();
+        // Eliminar la fila visualmente
+        row.remove();
 
-                // Actualizar el total después de eliminar la fila
-               
-            }
-        });
+        // Actualizar el total después de eliminar la fila
 
-  
+    }
+});
 
-        // Función para modificar un producto
+
+
 function modifyProduct(code) {
     // Buscar el producto en el array de productos
     const productIndex = products.findIndex(product => product.code === code);
@@ -123,12 +115,9 @@ function modifyProduct(code) {
         // Actualizar el localStorage sin el producto existente
         localStorage.setItem('productAdded', JSON.stringify(products));
 
-        // Mostrar un mensaje indicando que el producto se está modificando
         alert('Modificando producto. Puedes hacer los cambios y guardar.');
 
-        // Puedes agregar aquí lógica adicional según tus necesidades, por ejemplo, mostrar un formulario de edición.
     } else {
-        // Mostrar un mensaje si no se encuentra el producto
         alert('Producto no encontrado');
     }
 }

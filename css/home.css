@@ -26,8 +26,7 @@ font-family: 'Rubik Glitch', system-ui;
 font-size: 4rem;
 margin-top: 6rem;
 margin-right: 0.5rem;
-
-          text-shadow:  4px 3px rgba(0, 0, 0, 0.5); /* Sombra: desplazamiento en x, desplazamiento en y, desenfoque, color */
+text-shadow:  4px 3px rgba(0, 0, 0, 0.5);
 }
 
 .description-title{
@@ -85,7 +84,6 @@ color: #4fed51;
 -webkit-text-stroke: 0vw #383d52;
 border-right: 2px solid #4fed51;
 overflow: hidden;
-/* transition:animate 6s linear infinite; */
 animation: animate 6s linear infinite;
 }
 
@@ -185,15 +183,6 @@ margin-top: 3rem;
 
     letter-spacing:1px;
 }
-
-
-
-
-
-
-
-
-
 
 .container {
   margin: 30px auto;
@@ -318,9 +307,6 @@ margin-top: 3rem;
 
 
 /* Sponsors */
-
-
-
 
 .content .container{
 padding-bottom: 20px;
@@ -525,16 +511,3 @@ color: #4fed51;
 font-family: 'Rubik Glitch', system-ui;
 font-size: 6rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

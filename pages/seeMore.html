@@ -35,7 +35,7 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link text-light" aria-current="page" href="./home.html">Home</a>
@@ -73,47 +73,36 @@
                 <li><a class="dropdown-item" href="./category/kids/accessoriesKids.html">Accesorios</a></li>
               </ul>
             </li>
-
             <li class="nav-item d-none" id="CaptureAdminPage">
               <a class="nav-link text-light" aria-current="page" href="./admin.html">Administracion</a>
             </li>
-
           </ul>
 
           <ul class="navbar-nav">
-          <li id="btnLogueo"  class="nav-item">
-            <a class="nav-link text-light" href="./login-register.html?action=login"
-              >Loguearse</a
-            >
-          </li>
-          <li id="botonDeslogueo" class="nav-item d-none">
-            <a class="nav-link text-light"  href="./home.html" onclick="Deslogueo()" 
-              >Desloguearse</a
-            >
-          </li> 
-        </ul>
-
-        <ul id="carrito" class="nav-item">
-             <a class="nav-link text-light p-0 me-4" aria-current="page" href="./cart.html"><i
-                class='bx bxs-cart bx-tada-hover'></i></a>
-              
+            <li id="btnLogueo" class="nav-item">
+              <a class="nav-link text-light" href="./login-register.html?action=login">Loguearse</a>
+            </li>
+            <li id="botonDeslogueo" class="nav-item d-none">
+              <a class="nav-link text-light" href="./home.html" onclick="Deslogueo()">Desloguearse</a>
+            </li>
           </ul>
-
-
-
+          <ul id="carrito" class="nav-item">
+            <a class="nav-link text-light p-0 me-4" aria-current="page" href="./cart.html"><i
+                class='bx bxs-cart bx-tada-hover'></i></a>
+          </ul>
         </div>
-
       </div>
     </nav>
   </header>
-  <main>
 
+  <main>
     <!--base-->
     <section class="bg-products category">
       <div class="container mt-2">
         <nav class="navbar navbar-expand-md navbar-light bg-white">
           <div class="container-fluid p-0">
-            <a class="navbar-brand text-uppercase fw-800" href="#"><span class="border-green pe-2">Búsqueda</span>Avanzada</a>
+            <a class="navbar-brand text-uppercase fw-800" href="#"><span
+                class="border-green pe-2">Búsqueda</span>Avanzada</a>
           </div>
         </nav>
       </div>
@@ -127,16 +116,16 @@
               <div id="filterSection">
                 <h1>Búsqueda de Productos</h1>
                 <div>
-                    <label for="productName">Nombre del Producto:</label>
-                    <input type="text" id="productName" class="filter-input">
-        
-                    <label for="minPrice">Precio Mínimo:</label>
-                    <input type="number" id="minPrice" class="filter-input">
-        
-                    <label for="maxPrice">Precio Máximo:</label>
-                    <input type="number" id="maxPrice" class="filter-input">
-        
-                    <button id="applyFilters">Aplicar Filtros</button>
+                  <label for="productName">Nombre del Producto:</label>
+                  <input type="text" id="productName" class="filter-input" maxlength="25">
+
+                  <label for="minPrice">Precio Mínimo:</label>
+                  <input type="number" id="minPrice" class="filter-input" maxlength="10">
+
+                  <label for="maxPrice">Precio Máximo:</label>
+                  <input type="number" id="maxPrice" class="filter-input" maxlength="10">
+
+                  <button id="applyFilters">Aplicar Filtros</button>
                 </div>
               </div>
             </div>
@@ -147,88 +136,67 @@
         </div>
       </div>
     </section>
-
   </main>
 
-
- <!--Footer-->
-
-
- <footer class="site-footer">
-  <h2 class="h2 text-center text-light mb-5 titleFooter">>>>Rolling<br> Sports>>></h2>
-  <hr class="text-light">
-  <div class="container">
-    <div class="row">
-      
-      <div class="col-lg-4 col-md-6 mb-5">
-        <!-- Contact Info-->
-        <section>
-          <h3 class="widget-title text-center"><i class='bx bx-support'></i> Atencion al cliente</h3>
-          <p class="text-white text-center">Telefono: 0381 578-3030</p>
-          <ul class="list-unstyled text-sm text-white text-center">
-            <li><span class="opacity-50">Lunes a Viernes: </span>09.00 am - 13.00 pm</li>
-            <li><span class="opacity-50">Sabado: </span>09.00 am - 13.00 pm</li>
-          </ul>
-          <p class="text-center"><a href="#">deportesrolling@gmail.com</a></p>
-        </section>
+  <!--Footer-->
+  <footer class="site-footer">
+    <h2 class="h2 text-center text-light mb-5 titleFooter">>>>Rolling<br> Sports>>></h2>
+    <hr class="text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-5">
+          <!-- Contact Info-->
+          <section>
+            <h3 class="widget-title text-center"><i class='bx bx-support'></i> Atencion al cliente</h3>
+            <p class="text-white text-center">Telefono: 0381 578-3030</p>
+            <ul class="list-unstyled text-sm text-white text-center">
+              <li><span class="opacity-50">Lunes a Viernes: </span>09.00 am - 13.00 pm</li>
+              <li><span class="opacity-50">Sabado: </span>09.00 am - 13.00 pm</li>
+            </ul>
+            <p class="text-center"><a href="#">deportesrolling@gmail.com</a></p>
+          </section>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <!-- About Us-->
+          <section>
+            <h3 class="widget-title text-center">Sobre Nosotros</h3> 
+              <div class="mb-2 text-center"><a href="./About-US.html" class="btn link-footer border rounded-3 p-2">> Acerca de nosotros <</a></div>
+              <div class="text-center"><a href="./contact.html" class="btn link-footer border rounded-3 p-2">-- Formulario de contacto --</a></div>      
+          </section>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <!-- Mobile App Buttons-->
+          <section>
+            <h3 class="widget-title text-center"><i class='bx bxs-news'></i> Newlester</h3>
+            <!--Subscription-->
+          <form class="subscribe-form" action="#" method="post" target="_blank" novalidate="">
+            <div>
+              <a class="btn btn-success text-light mt-2 " href="./login-register.html?action=register">Registrarse</a>
+            </p>
+            </div><span class="form-text text-sm text-white opacity-50">Suscríbase a nuestro boletín para recibir ofertas de descuentos anticipados, las últimas noticias, información sobre ventas y promociones.</span>
+          </form>
+          </section>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <!-- Account / Shipping Info-->
+        </div>
       </div>
-      <div class="col-lg-4 col-md-6 mb-5">
-        <!-- About Us-->
-        <section>
-          <h3 class="widget-title text-center">Sobre Nosotros</h3> 
-            <div class="mb-2 text-center"><a href="./About-US.html" class="btn link-footer border rounded-3 p-2">> Acerca de nosotros <</a></div>
-            <div class="text-center"><a href="./contact.html" class="btn link-footer border rounded-3 p-2">-- Formulario de contacto --</a></div>      
-        </section>
+      <hr class="mt-2 margin-bottom-2x">
+      <div class="row">
+        <div class="col-md-7 padding-bottom-1x"></div>
+        <div class="col-md-5 padding-bottom-1x">
+          <div class="margin-top-1x hidden-md-up"></div>
+        </div>
       </div>
-      <div class="col-lg-4 col-md-6 mb-5">
-        <!-- Mobile App Buttons-->
-        <section>
-          <h3 class="widget-title text-center"><i class='bx bxs-news'></i> Newlester</h3>
-          <!--Subscription-->
-        <form class="subscribe-form" action="#" method="post" target="_blank" novalidate="">
-          <div>
-            
-            <a class="btn btn-success text-light mt-2 " href="./login-register.html?action=register">rEGISTRARSE</a>
-          </p>
-          </div><span class="form-text text-sm text-white opacity-50">Suscríbase a nuestro boletín para recibir ofertas de descuentos anticipados, las últimas noticias, información sobre ventas y promociones.</span>
-        </form>
-        </section>
-      </div>
-      
-      <div class="col-lg-3 col-md-6">
-        <!-- Account / Shipping Info-->
-        
-      </div>
+      <!-- Copyright-->
+      <p class="footer-copyright text-center">&copy; Rolling Sports<br> All rights reserved - 2024. </p>
+      <p class="footer-copyright text-center">Made with <i class='bx bxs-heart'></i> in Tucuman - Argentina </p>
     </div>
-    <hr class="mt-2 margin-bottom-2x">
-    <div class="row">
-      <div class="col-md-7 padding-bottom-1x"></div>
-      <div class="col-md-5 padding-bottom-1x">
-        <div class="margin-top-1x hidden-md-up"></div>
-        
-      </div>
-    </div>
-    <!-- Copyright-->
-    <p class="footer-copyright text-center">&copy; Rolling Sports<br> All rights reserved - 2024. </p>
-    <p class="footer-copyright text-center">Made with <i class='bx bxs-heart'></i> in Tucuman - Argentina </p>
-  </div>
-</footer>
+  </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="../js/Navbar.js"> </script>
   <script>
     AOS.init();
@@ -240,4 +208,3 @@
 </body>
 
 </html>
-

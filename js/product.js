@@ -32,8 +32,5 @@ addToCartButtons.forEach(function(button) {
 
         // Confirmar que el producto se ha añadido al carrito
         alert('Producto agregado al carrito');
-
-        // Puedes redirigir a la página del carrito u otras acciones según tus necesidades
-        // window.location.href = '../pages/carrito.html';
     });
 });
