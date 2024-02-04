@@ -1,8 +1,24 @@
+function generateRandomCode() {
+    return Math.floor(Math.random() * 1000000);
+}
+
+// Función para inicializar la página
+function initializePage() {
+    // Obtener el campo de código y asignar el código generado
+    const codeProductField = document.querySelector('.code-product');
+    codeProductField.value = generateRandomCode();
+}
+
+// Llamar a la función de inicialización al cargar la página
+document.addEventListener('DOMContentLoaded', initializePage);
+
+
 const addProductButton = document.querySelector('.addProduct');
 
 addProductButton.addEventListener("submit", function (event) {
+    const generatedCode = generateRandomCode();
 
-    const codeProduct = document.querySelector('.code-product').value;
+    const codeProduct = document.querySelector('.code-product').value = generatedCode;
     const imageProduct = document.querySelector('.image-product').value;
     const imageProduct2 = document.querySelector('.image-product-2').value;
     const imageProduct3 = document.querySelector('.image-product-3').value;
@@ -137,3 +153,7 @@ tbody.addEventListener('click', function (event) {
         modifyProduct(code);
     }
 });
+
+function generateRandomCode() {
+    return Math.floor(Math.random() * 1000000);
+}

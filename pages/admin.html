@@ -93,7 +93,7 @@
       </div>
     </nav>
   </header>
-  <main class="container-fluid">
+  <main class="container-fluid pt-sm-6">
 
     <!--Admin-->
 
@@ -108,7 +108,7 @@
             <form class="container-fluid addProduct">
               <div class="mb-3">
                 <label for="id" class="form-label">Codigo </label>
-                <input id="id" type="text" class="form-control code-product" minlength="1" maxlength="50" required>
+                <input id="id" type="text" class="form-control code-product" disabled required>
               </div>
 
               <div class="mb-3">
@@ -131,28 +131,28 @@
               </div>
               <div class="mb-3">
                 <label for="formFile1" class="form-label">Agregar Imagen URL</label>
-                <input id="formFile1" class="form-control image-product" type="text" required>
+                <input id="formFile1" class="form-control image-product" type="text" minlength="4" maxlength="200" required>
               </div>
               <div class="mb-3">
                 <label for="formFile2" class="form-label">Agregar Imagen URL - 2</label>
-                <input id="formFile2" class="form-control image-product-2" type="text" required>
+                <input id="formFile2" class="form-control image-product-2" type="text" minlength="4" maxlength="200" required>
               </div>
               <div class="mb-3">
                 <label for="formFile3" class="form-label">Agregar Imagen URL - 3</label>
-                <input id="formFile3" class="form-control image-product-3" type="text" required>
+                <input id="formFile3" class="form-control image-product-3" type="text" minlength="4" maxlength="200" required>
               </div>
               <div class="mb-3">
                 <label for="formFile4" class="form-label">Agregar Imagen UR - 4</label>
-                <input id="formFile4" class="form-control image-product-4" type="text" required>
+                <input id="formFile4" class="form-control image-product-4" type="text" minlength="4" maxlength="200" required>
               </div>
               <div class="mb-3">
                 <label for="title" class="form-label">Titulo </label>
-                <input id="title" type="text" class="form-control title-product" minlength="1" maxlength="50" required>
+                <input id="title" type="text" class="form-control title-product" minlength="5" maxlength="30" required>
               </div>
               <div class="my-5">
                 <label for="description" class="form-label d-flex flex-column">Descripcion </label>
                 <textarea id="description" name="description" id="" cols="10" rows="10" class="description-pageDetail mx-auto"
-                  minlength="10" maxlength="500" style="width: 20rem;" required></textarea>
+                  minlength="10" maxlength="500" required></textarea>
               </div>
               <div class="mb-3">
                 <label for="price" class="form-label">Precio </label>
@@ -165,7 +165,7 @@
       </div>
     </section>
 
-    <section class="table-responsive-sm my-5 text-center">
+    <section class="table-responsive my-5 text-center">
       <div class="row justify-content-center">
         <div class="my-5 text-center">
           <h2 class="navbar-brand text-uppercase"><span class="border-green pe-2">Productos</span>Agregados</h2>
