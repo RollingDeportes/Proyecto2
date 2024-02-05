@@ -560,3 +560,19 @@ button {
 .link-footer:hover {
   color: #4fed51;
 }
+
+.category {
+  margin-top: 5rem;
+}
+
+@media (max-width: 550px) {
+  .tamano1{
+    display: none;
+  }
+}
+
+@media (min-width: 551px) {
+  .tamano2{
+    display: none;
+  }
+}
