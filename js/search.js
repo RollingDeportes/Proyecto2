@@ -70,9 +70,6 @@ function createProductCard(product) {
                               <li><img onclick="changeImage(this)"
                               src="${product.image3}"                                  
                               width="70"></li>
-                              <li><img onclick="changeImage(this)"
-                              src="${product.image4}"                                  
-                              width="70"></li>
                             </ul>
                           </div>
                         </div>
