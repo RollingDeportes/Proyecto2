@@ -1,0 +1,11 @@
+/*Contact*/
+
+@media only screen and (max-width: 600px) {
+  #map {
+    display: none;
+  }
+}
+
+.esp {
+  margin-top: 3rem;
+}

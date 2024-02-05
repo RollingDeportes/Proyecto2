@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="authors" content="Agustina Moreno, Javier Aguilar, Axel Ontiveros, Martín Ladetto, Facundo Palacios." />
+  <meta name="description" content="Tienda de Ropa, Página de ventas, San Miguel de Tucumán" />
+  <meta name="keywords" content="e-commerce, store, sports, clothes, shoes, accessories" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/home.css">
+  <link rel="stylesheet" href="../../../css/product.css">
+  <title>Rooling Sports</title>
+</head>
+
+
+<body>
+  <header>
+    <!--NavBar-->
+    <nav class="navBarPage navbar navbar-expand-lg navbar-light  fixed-top">
+      <div class="container-fluid">
+        <h4 class="titlePage text-light">>>>Rolling<br> Sports>>></h4>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="../../home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Mujeres
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../women/clothesWomen.html">Ropa</a></li>
+                <li><a class="dropdown-item" href="../women/shoesWomen.html">Calzado</a></li>
+                <li><a class="dropdown-item" href="../women/accessoriesWomen.html">Accesorios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Hombres
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../men/clothesMen.html">Ropa</a></li>
+                <li><a class="dropdown-item" href="../men/shoesMen.html">Calzado</a></li>
+                <li><a class="dropdown-item" href="../men/accessoriesMen.html">Accesorios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Niños
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../kids/clothesKids.html">Ropa</a></li>
+                <li><a class="dropdown-item" href="../kids/shoesKids.html">Calzado</a></li>
+                <li><a class="dropdown-item" href="../kids/accessoriesKids.html">Accesorios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-none" id="CaptureAdminPage">
+              <a class="nav-link text-light" aria-current="page" href="../../admin.html">Administracion</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li id="btnLogueo" class="nav-item">
+              <a class="nav-link text-light" href="../../login-register.html?action=login">Loguearse</a>
+            </li>
+            <li id="botonDeslogueo" class="nav-item d-none">
+              <a class="nav-link text-light" href="../../home.html" onclick="Deslogueo()">Desloguearse</a>
+            </li>
+          </ul>
+          <ul id="carrito" class="nav-item">
+            <a class="nav-link text-light p-0 me-4" aria-current="page" href="../../cart.html"><i
+                class='bx bxs-cart bx-tada-hover'></i></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!--Products-->
+    <section class="bg-products category">
+      <div class="container mt-2">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+          <div class="container-fluid p-0">
+            <a class="navbar-brand text-uppercase fw-800" href="#"><span
+                class="border-green pe-2">Hombres</span>Calzado</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav"
+              aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fas fa-bars"></span>
+            </button>
+          </div>
+        </nav>
+        <div class="row productCardContainer">
+          <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+            data-aos="zoom-in">
+            <div class="product">
+              <img src="../../../img/products/hombres/calzado/productExample1/imagen-1.webp" alt="Jordan Stadium 90">
+            </div>
+            <div class="tag bg-red">sale</div>
+            <div class="title pt-4 pb-1">Jordan Stadium 90</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">$ 213.999</div>
+            <button class="bg-success text-light border rounded-3 p-2" data-bs-toggle="modal"
+              data-bs-target="#exampleModal9">Ver detalles</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="card">
+                    <div class="row g-0">
+                      <div class="col-md-6 border-end">
+                        <div class="d-flex flex-column justify-content-center">
+                          <div class="main_image"> <img class="card-image"
+                              src="../../../img/products/hombres/calzado/productExample1/imagen-1.webp"
+                              id="main_product_image" width="350"> </div>
+                          <div class="thumbnail_images">
+                            <ul id="thumbnail">
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample1/imagen-1.webp" width="70">
+                              </li>
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample1/imagen-2.webp" width="70">
+                              </li>
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample1/imagen-3.webp" width="70">
+                              </li>
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample1/imagen-4.webp" width="70">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3 right-side">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Jordan Stadium 90</h3>
+                          </div>
+                          <div class="mt-2 pr-3 content">
+                            <p>La comodidad es lo más importante, pero eso no significa que debas sacrificar el estilo.
+                              El Stadium 90, con un diseño inspirado en el AJ1 y el AJ5, está listo para usarlo todos
+                              los días. La parte superior está confeccionada con cuero y tejido Woven fresco para que
+                              tengas transpirabilidad y durabilidad, y la amortiguación Nike Air en la suela hace que tu
+                              pisada sea ligera y se sienta acolchada.
+
+
+                              Beneficios
+
+                              La parte superior es duradera y está confeccionada con cuero auténtico, cuero sintético y
+                              materiales textiles.
+                              La tecnología Nike Air absorbe el impacto para brindar amortiguación en cada paso.
+                              La suela de goma proporciona tracción para el día a día.
+
+                              Datos del producto
+
+                              La suela de goma rinde homenaje al AJ1
+                              Los detalles de llamas y la marca del talón hacen referencia al AJ5.</p>
+                          </div>
+                          <h3 class="card-price">$ 213.999</h3>
+                          <div class="ratings d-flex flex-row align-items-center">
+                            <div class="d-flex flex-row"> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                                id="star"></i> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                                id="star"></i> <i class='bx bxs-star' id="star"></i> </div> <span>441
+                              reviews</span>
+                          </div>
+                          <div class="size">
+                            <select class="card-size">
+                              <option>Size : S</option>
+                              <option>Size : M</option>
+                              <option>Size : L</option>
+                              <option>Size : XL</option>
+                            </select>
+                            <div class="buttons d-flex flex-row mt-5 gap-3"> <button
+                                class="btn-success p-2 rounded-3 buy">Comprar</button> <button
+                                class="btn-warning p-2 rounded-3 addToCart">Agregar al carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product">
+              <img src="../../../img/products/hombres/calzado/productExample2/imagen-1.webp"
+                alt="Nike Air Force 1 '07"></a>
+            </div>
+            <div class="title pt-4 pb-1">Nike Air Force 1 '07</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">$ 177.999</div>
+            <button class="bg-success text-light border rounded-3 p-2" data-bs-toggle="modal"
+              data-bs-target="#exampleModal2">Ver detalles</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="card">
+                    <div class="row g-0">
+                      <div class="col-md-6 border-end">
+                        <div class="d-flex flex-column justify-content-center">
+                          <div class="main_image"> <img class="card-image"
+                              src="../../../img/products/hombres/calzado/productExample2/imagen-1.webp"
+                              id="main_product_image" width="350"> </div>
+                          <div class="thumbnail_images">
+                            <ul id="thumbnail">
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample2/imagen-1.webp" width="70">
+                              </li>
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample2/imagen-2.webp" width="70">
+                              </li>
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample2/imagen-3.webp" width="70">
+                              </li>
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample2/imagen-4.webp" width="70">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3 right-side">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Nike Air Force 1 '07</h3>
+                          </div>
+                          <div class="mt-2 pr-3 content">
+                            <p>ESTILO LEGENDARIO Y REFINADO.
+
+                              El fulgor vive en el Nike Air Force 1 ’07, el OG de básquetbol que le da un toque fresco a
+                              lo que mejor conoces: revestimientos con costuras duraderas, acabados impecables y la
+                              cantidad perfecta de destellos para que brilles.
+                              Beneficios
+                              •Los revestimientos cosidos en la parte superior añaden un estilo de herencia con
+                              durabilidad y soporte.
+                              •Diseñada originalmente para el básquetbol de alto rendimiento, la amortiguación Nike Air
+                              agrega comodidad ligera durante todo el día.
+                              •El estilo de corte low ofrece un look impecable y estilizado.
+                              •La zona del tobillo acolchada es suave y cómoda.
+
+                              Datos del producto
+                              •Entresuela de espuma
+                              •Perforaciones en la punta
+                              •Suela de goma
+
+                              Air Force 1 Origins
+                              Tras su debut en 1982, el AF1 revolucionó el deporte al convertirse en el primer calzado
+                              de básquetbol con el sistema Nike Air. Además, no tardó en ganarse su aceptación en todo
+                              el mundo. Hoy en día, el Air Force 1 sigue fiel a su origen con la misma amortiguación
+                              elástica y suave que cambió el curso de la historia del calzado.</p>
+                          </div>
+                          <h3 class="card-price">$ 177.999</h3>
+                          <div class="ratings d-flex flex-row align-items-center">
+                            <div class="d-flex flex-row"> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                                id="star"></i> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                                id="star"></i> <i class='bx bxs-star' id="star"></i> </div> <span>441
+                              reviews</span>
+                          </div>
+                          <div class="size">
+                            <select class="card-size">
+                              <option>Size : S</option>
+                              <option>Size : M</option>
+                              <option>Size : L</option>
+                              <option>Size : XL</option>
+                            </select>
+                            <div class="buttons d-flex flex-row mt-5 gap-3"> <button
+                                class="btn-success p-2 rounded-3 buy">Comprar</button> <button
+                                class="btn-warning p-2 rounded-3 addToCart">Agregar al carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product">
+              <img src="../../../img/products/hombres/calzado/productExample3/imagen-1.jpg"
+                alt="Zapatillas PUMA R22 ADP"></a>
+            </div>
+            <div class="tag bg-green">New</div>
+            <div class="title pt-4 pb-1">Zapatillas PUMA R22 ADP</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">$ 104.999</div>
+            <button class="bg-success text-light border rounded-3 p-2" data-bs-toggle="modal"
+              data-bs-target="#exampleModal3">Ver detalles</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="card">
+                    <div class="row g-0">
+                      <div class="col-md-6 border-end">
+                        <div class="d-flex flex-column justify-content-center">
+                          <div class="main_image"> <img class="card-image"
+                              src="../../../img/products/hombres/calzado/productExample3/imagen-1.jpg"
+                              id="main_product_image" width="350"> </div>
+                          <div class="thumbnail_images">
+                            <ul id="thumbnail">
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample3/imagen-1.jpg" width="70">
+                              </li>
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample3/imagen-2.jpg" width="70">
+                              </li>
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample3/imagen-3.jpg" width="70">
+                              </li>
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample3/imagen-4.jpg" width="70">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3 right-side">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Zapatillas PUMA R22 ADP</h3>
+                          </div>
+                          <div class="mt-2 pr-3 content">
+                            <p></p>
+                          </div>
+                          <h3 class="card-price">$ 104.999</h3>
+                          <div class="ratings d-flex flex-row align-items-center">
+                            <div class="d-flex flex-row"> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                                id="star"></i> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                                id="star"></i> <i class='bx bxs-star' id="star"></i> </div> <span>441
+                              reviews</span>
+                          </div>
+                          <div class="size">
+                            <select class="card-size">
+                              <option>Size : S</option>
+                              <option>Size : M</option>
+                              <option>Size : L</option>
+                              <option>Size : XL</option>
+                            </select>
+                            <div class="buttons d-flex flex-row mt-5 gap-3"> <button
+                                class="btn-success p-2 rounded-3 buy">Comprar</button> <button
+                                class="btn-warning p-2 rounded-3 addToCart">Agregar al carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product">
+              <img src="../../../img/products/hombres/calzado/productExample4/imagen-1.webp"
+                alt="Zapatillas Energen Lite Men"></a>
+            </div>
+            <div class="title pt-4 pb-1">Zapatillas Energen Lite Men</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">$ 59.999</div>
+            <button class="bg-success text-light border rounded-3 p-2" data-bs-toggle="modal"
+              data-bs-target="#exampleModal4">Ver detalles</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="card">
+                    <div class="row g-0">
+                      <div class="col-md-6 border-end">
+                        <div class="d-flex flex-column justify-content-center">
+                          <div class="main_image"> <img class="card-image"
+                              src="../../../img/products/hombres/calzado/productExample4/imagen-1.webp"
+                              id="main_product_image" width="350"> </div>
+                          <div class="thumbnail_images">
+                            <ul id="thumbnail">
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample4/imagen-1.webp" width="70">
+                              </li>
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample4/imagen-2.webp" width="70">
+                              </li>
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample4/imagen-3.webp" width="70">
+                              </li>
+                              <li><img onclick="changeImage(this)"
+                                  src="../../../img/products/hombres/calzado/productExample4/imagen-4.webp" width="70">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3 right-side">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Zapatillas Energen Lite Men</h3>
+                          </div>
+                          <div class="mt-2 pr-3 content">
+                            <p>ZAPATILLAS DE RUNNING LIGERAS PARA UN CONFORT DURADERO.
+                              Acumula kilómetros con esta zapatilla de running ligera de Reebok. La suela de espuma
+                              FuelFoam de una sola densidad amortigua cada paso y te proporciona comodidad durante todo
+                              el día. Tus pies se mantendrán frescos gracias a la parte superior de malla transpirable,
+                              mientras que los revestimientos en el talón y la puntera aportan sujeción a tu pisada.</p>
+                          </div>
+                          <h3 class="card-price">$ 59.999</h3>
+                          <div class="ratings d-flex flex-row align-items-center">
+                            <div class="d-flex flex-row"> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                                id="star"></i> <i class='bx bxs-star' id="star"></i> <i class='bx bxs-star'
+                                id="star"></i> <i class='bx bxs-star' id="star"></i> </div> <span>441
+                              reviews</span>
+                          </div>
+                          <div class="size">
+                            <select class="card-size">
+                              <option>Size : S</option>
+                              <option>Size : M</option>
+                              <option>Size : L</option>
+                              <option>Size : XL</option>
+                            </select>
+                            <div class="buttons d-flex flex-row mt-5 gap-3"> <button
+                                class="btn-success p-2 rounded-3 buy">Comprar</button> <button
+                                class="btn-warning p-2 rounded-3 addToCart">Agregar al carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-5 mt-5">
+      <h2 class="text-uppercase fw-800 text-center" href="#"><span class="border-green pe-2">Nuestros Sponsors</span>
+      </h2>
+      <div class="content d-flex align-items-center justify-content-center">
+        <div class="container">
+
+          <div class="rollers position-relative overflow-hidden">
+            <div class="start-roller"></div>
+            <div class="wrapper">
+              <div class="items-container roll-LL">
+                <div class="item">
+                  <img src="../../../img/logos/adidas.png" alt="adidas" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/adidasOriginals.png" alt="adidasOriginals" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/nike.png" alt="nike" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/puma.png" alt="puma" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/reebok.png" alt="reebok" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/underArmour.png" alt="underArmour" class="company">
+                </div>
+              </div>
+              <div class="items-container roll-RL">
+                <div class="item">
+                  <img src="../../../img/logos/adidas.png" alt="adidas" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/adidasOriginals.png" alt="adidasOriginals" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/nike.png" alt="nike" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/puma.png" alt="puma" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/reebok.png" alt="reebok" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/underArmour.png" alt="underArmour" class="company">
+                </div>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="items-container reverse-roll-LL">
+                <div class="item">
+                  <img src="../../../img/logos/vans.png" alt="vans" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/umbro.png" alt="umbro" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/calvinKlein.png" alt="calvinKlein" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/nike.png" alt="nike" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/adidasOriginals.png" alt="adidasOriginals" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/reebok.png" alt="reebok" class="company">
+                </div>
+              </div>
+              <div class="items-container reverse-roll-RL">
+                <div class="item">
+                  <img src="../../../img/logos/vans.png" alt="vans" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/umbro.png" alt="umbro" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/calvinKlein.png" alt="calvinKlein" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/nike.png" alt="nike" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/adidasOriginals.png" alt="adidasOriginals" class="company">
+                </div>
+                <div class="item">
+                  <img src="../../../img/logos/reebok.png" alt="reebok" class="company">
+                </div>
+              </div>
+            </div>
+            <div class="end-roller"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--Footer-->
+  <footer class="site-footer">
+    <h2 class="h2 text-center text-light mb-5 titleFooter">>>>Rolling<br> Sports>>></h2>
+    <hr class="text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-5">
+          <!-- Contact Info-->
+          <section>
+            <h3 class="widget-title text-center"><i class='bx bx-support'></i> Atencion al cliente</h3>
+            <p class="text-white text-center">Telefono: 0381 578-3030</p>
+            <ul class="list-unstyled text-sm text-white text-center">
+              <li><span class="opacity-50">Lunes a Viernes: </span>09.00 am - 13.00 pm</li>
+              <li><span class="opacity-50">Sabado: </span>09.00 am - 13.00 pm</li>
+            </ul>
+            <p class="text-center"><a href="#">deportesrolling@gmail.com</a></p>
+          </section>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <!-- About Us-->
+          <section>
+            <h3 class="widget-title text-center">Sobre Nosotros</h3>
+            <div class="mb-2 text-center"><a href="../../About-US.html" class="btn link-footer border rounded-3 p-2">>
+                Acerca de nosotros << /a>
+            </div>
+            <div class="text-center"><a href="../../contact.html" class="btn link-footer border rounded-3 p-2">--
+                Formulario de contacto --</a></div>
+          </section>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <!-- Mobile App Buttons-->
+          <section>
+            <h3 class="widget-title text-center"><i class='bx bxs-news'></i> Newlester</h3>
+            <!--Subscription-->
+            <form class="subscribe-form" action="#" method="post" target="_blank" novalidate="">
+              <div>
+                <a class="btn btn-success text-light mt-2 "
+                  href="../../login-register.html?action=register">Registrarse</a>
+                </p>
+              </div><span class="form-text text-sm text-white opacity-50">Suscríbase a nuestro boletín para recibir
+                ofertas de descuentos anticipados, las últimas noticias, información sobre ventas y promociones.</span>
+            </form>
+          </section>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <!-- Account / Shipping Info-->
+        </div>
+      </div>
+      <hr class="mt-2 margin-bottom-2x">
+      <div class="row">
+        <div class="col-md-7 padding-bottom-1x"></div>
+        <div class="col-md-5 padding-bottom-1x">
+          <div class="margin-top-1x hidden-md-up"></div>
+        </div>
+      </div>
+      <!-- Copyright-->
+      <p class="footer-copyright text-center">&copy; Rolling Sports<br> All rights reserved - 2024. </p>
+      <p class="footer-copyright text-center">Made with <i class='bx bxs-heart'></i> in Tucuman - Argentina </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../../../js/addProduct/shoesProducts.js"></script>
+  <script src="../../../js/modal.js"></script>
+  <script src="../../../js/product.js"></script>
+  <script src="../../../js/Navbar.js"></script>
+  <script src="../../../js/login-register.js"></script>
+</body>
+
+</html>

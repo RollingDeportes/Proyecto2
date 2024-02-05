@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="authors" content="Agustina Moreno, Javier Aguilar, Axel Ontiveros, Martín Ladetto, Facundo Palacios." />
+  <meta name="description" content="Tienda de Ropa, Página de ventas, San Miguel de Tucumán" />
+  <meta name="keywords" content="e-commerce, store, sports, clothes, shoes, accessories" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/aboutUs.css">
+  <title>Rooling Sports</title>
+</head>
+
+
+<body>
+  <header>
+
+    <!--NavBar-->
+
+
+    <nav class="navBarPage navbar navbar-expand-lg navbar-light  fixed-top">
+      <div class="container-fluid">
+        <h4 class="titlePage text-light">>>>Rolling<br> Sports>>></h4>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Mujeres
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./category/women/clothesWomen.html">Ropa</a></li>
+                <li><a class="dropdown-item" href="./category/women/shoesWomen.html">Calzado</a></li>
+                <li><a class="dropdown-item" href="./category/women/accessoriesWomen.html">Accesorios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Hombres
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./category/men/clothesMen.html">Ropa</a></li>
+                <li><a class="dropdown-item" href="./category/men/shoesMen.html">Calzado</a></li>
+                <li><a class="dropdown-item" href="./category/men/accessoriesMen.html">Accesorios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Niños
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./category/kids/clothesKids.html">Ropa</a></li>
+                <li><a class="dropdown-item" href="./category/kids/shoesKids.html">Calzado</a></li>
+                <li><a class="dropdown-item" href="./category/kids/accessoriesKids.html">Accesorios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-none" id="CaptureAdminPage">
+              <a class="nav-link text-light" aria-current="page" href="./admin.html">Administracion</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li id="btnLogueo" class="nav-item">
+              <a class="nav-link text-light" href="./login-register.html?action=login">Loguearse</a>
+            </li>
+            <li id="botonDeslogueo" class="nav-item d-none">
+              <a class="nav-link text-light" href="./home.html" onclick="Deslogueo()">Desloguearse</a>
+            </li>
+          </ul>
+          <ul id="carrito" class="nav-item">
+            <a class="nav-link text-light p-0 me-4" aria-current="page" href="./cart.html"><i
+                class='bx bxs-cart bx-tada-hover'></i></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-main">
+      <div class="text-center">
+        <br>
+        <br>
+        <h1 class="pt-5">Quiénes somos</h1>
+        <p>
+          Somos los integrantes del grupo #3 de la comisión 80I.
+          <br>
+          A continuación les presentamos una breve descripción de cada uno:
+        </p>
+        <hr class="my-5" />
+      </div>
+      <article class="row text-center m-3">
+        <div class="col-md-4 col-sm-12 pt-3">
+          <img src="../img/avatar/facundoAvatar.png" alt="facundoPalacios" width="150" height="150"
+            style="border-radius: 50%;" />
+          <h5 class="text-center my-3">Facundo Palacios</h5>
+          <p class="text-center">
+            Tengo 24 años, soy estudiante de ingenieria en sistemas, apasionado por la programación en busca de mejorar
+            mis habilidades en este campo.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12 pt-3">
+          <img src="../img/avatar/agustinaAvatar.jpg" alt="agustinaMoreno" width="150" height="150"
+            style="border-radius: 50%;" />
+          <h5 class="text-center my-3">Agustina Moreno</h5>
+          <p class="text-center">
+            Tengo 18 años, soy estudiante de ingenieria informática, apasionada por el baile y el gimnasio. Comence con
+            este curso para ampliar mis conocimientos en la carrera que comencé.
+        </div>
+        <div class="col-md-4 col-sm-12 pt-3">
+          <img src="../img/avatar/javierAvatar.png" alt="javierAguilar" width="150" height="150"
+            style="border-radius: 50%;" />
+          <h5 class="text-center my-3">Javier Aguilar</h5>
+          <p class="text-center">
+            Tengo 32 años, soy Tecnico superior en Higiene y seguridad. Actualmente me encuentro inmerso en el mundo IT
+            donde descubrí mi verdadera pasión que es la programación.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-sm-12 pt-3">
+          <img src="../img/avatar/axelAvatar.png" alt="axelOntiveros" width="150" height="150"
+            style="border-radius: 50%;" />
+          <h5 class="text-center my-3">Axel Ontiveros</h5>
+          <p class="text-center">
+            Tengo 22 años, soy estudiante de abogacía. <br> Me llamó la atención la programación desde niño y quise
+            intentarlo.
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12 pt-3 mb-5">
+          <img src="../img/avatar/martinAvatar.png" alt="martinLadetto" width="150" height="150"
+            style="border-radius: 50%;" />
+          <h5 class="text-center my-3">Martin Ladetto</h5>
+          <p class="text-center">
+            Tengo 34 años, Soy estudiante de ingenieria en sistemas. <br> Actualmente trabajo en enarea de networking.
+          </p>
+        </div>
+
+      </article>
+    </div>
+
+  </main>
+
+  <!--Footer-->
+  <footer class="site-footer">
+    <h2 class="h2 text-center text-light mb-5 titleFooter" data-aos="fade-right" data-aos-offset="500"
+      data-aos-easing="ease-in-sine">>>>Rolling<br> Sports>>></h2>
+    <hr class="text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-5">
+          <!-- Contact Info-->
+          <section>
+            <h3 class="widget-title text-center"><i class='bx bx-support'></i> Atencion al cliente</h3>
+            <p class="text-white text-center">Telefono: 0381 578-3030</p>
+            <ul class="list-unstyled text-sm text-white text-center">
+              <li><span class="opacity-50">Lunes a Viernes: </span>09.00 am - 13.00 pm</li>
+              <li><span class="opacity-50">Sabado: </span>09.00 am - 13.00 pm</li>
+            </ul>
+            <p class="text-center"><a href="#">deportesrolling@gmail.com</a></p>
+          </section>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <!-- About Us-->
+          <section>
+            <h3 class="widget-title text-center">Sobre Nosotros</h3>
+            <div class="mb-2 text-center"><a href="./About-US.html" class="btn link-footer border rounded-3 p-2">>
+                Acerca de nosotros << /a>
+            </div>
+            <div class="text-center"><a href="./contact.html" class="btn link-footer border rounded-3 p-2">-- Formulario
+                de contacto --</a></div>
+          </section>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <!-- Mobile App Buttons-->
+          <section>
+            <h3 class="widget-title text-center"><i class='bx bxs-news'></i> Newlester</h3>
+            <!--Subscription-->
+            <form class="subscribe-form" action="#" method="post" target="_blank" novalidate="">
+              <div>
+                <a class="btn btn-success text-light mt-2 " href="./login-register.html?action=register">Registrarse</a>
+                </p>
+              </div><span class="form-text text-sm text-white opacity-50">Suscríbase a nuestro boletín para recibir
+                ofertas de descuentos anticipados, las últimas noticias, información sobre ventas y promociones.</span>
+            </form>
+          </section>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <!-- Account / Shipping Info-->
+        </div>
+      </div>
+      <hr class="mt-2 margin-bottom-2x">
+      <div class="row">
+        <div class="col-md-7 padding-bottom-1x"></div>
+        <div class="col-md-5 padding-bottom-1x">
+          <div class="margin-top-1x hidden-md-up"></div>
+        </div>
+      </div>
+      <!-- Copyright-->
+      <p class="footer-copyright text-center">&copy; Rolling Sports<br> All rights reserved - 2024. </p>
+      <p class="footer-copyright text-center">Made with <i class='bx bxs-heart'></i> in Tucuman - Argentina </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/Navbar.js"> </script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/product.js"></script>
+
+
+</body>
+
+</html>

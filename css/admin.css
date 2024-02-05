@@ -1,0 +1,9 @@
+/* Admin */
+
+.description-pageDetail {
+  width: 100%; /* Ajustar el ancho del textarea al 100% */
+}
+
+.pt-sm-6 {
+  padding-top: 50px;
+}

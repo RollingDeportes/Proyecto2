@@ -1,4 +1,22 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  max-height: 100vh;
+}
+
+.rolling {
+  font-size: 10rem;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: green;
+}
+
+.titlePage {
+  font-family: "Rubik Glitch", system-ui;
+}
+
+.bxs-heart {
+  color: #4fed51;
 }
