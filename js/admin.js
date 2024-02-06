@@ -174,6 +174,8 @@ function modifyProduct(code) {
         const existingProduct = products[productIndex];
 
         document.querySelector('.code-product').value = existingProduct.code;
+        document.querySelector('.category-product').value = existingProduct.category;
+        document.querySelector('.type-product').value = existingProduct.type;
         document.querySelector('.image-product').value = existingProduct.image;
         document.querySelector('.image-product-2').value = existingProduct.image2;
         document.querySelector('.image-product-3').value = existingProduct.image3;
