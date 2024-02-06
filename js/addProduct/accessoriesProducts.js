@@ -39,8 +39,8 @@ function displayProductCards() {
         <span class="fas fa-star"></span>
         <span class="fas fa-star"></span>
     </div>
-    <div class="price">$${product.price}</div>
-    <div>
+    <div class="price text-center">$${product.price}</div>
+    <div class="text-center">
     <button class="bg-success text-light border rounded-3 p-2" data-bs-toggle="modal"
   data-bs-target="#exampleModal${product.code}">Ver detalles</button>
 </div>
