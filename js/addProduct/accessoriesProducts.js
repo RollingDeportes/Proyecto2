@@ -31,7 +31,7 @@ function displayProductCards() {
         <img src="${product.image}"
             alt="${product.title}">
     </div>
-    <div class="title pt-4 pb-1">${product.title}</div>
+    <div class="title pt-4 pb-1 text-center">${product.title}</div>
     <div class="d-flex align-content-center justify-content-center">
         <span class="fas fa-star"></span>
         <span class="fas fa-star"></span>
@@ -100,8 +100,8 @@ function displayProductCards() {
                   <option>Size : L</option>
                   <option>Size : XL</option>
                 </select>
-                <div class="buttons d-flex flex-row mt-5 gap-3"> <button
-                    class="btn-success p-2 rounded-3 buy">Comprar</button> <button
+                <div class="buttons d-flex flex-row mt-5 gap-3"> <a
+                    class="btn-success p-2 rounded-3 buy" href="../../error404.html">Comprar</a> <button
                     class="btn-warning p-2 rounded-3 addToCart">Agregar al carrito</button>
                    </div>
               </div>
