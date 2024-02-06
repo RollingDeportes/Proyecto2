@@ -13,6 +13,28 @@ function initializePage() {
 document.addEventListener('DOMContentLoaded', initializePage);
 
 
+
+function isValidURL(url) {
+    const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+    return urlRegex.test(url);
+}
+
+function isValidStringLength(value, minLength, maxLength) {
+    return value.length >= minLength && value.length <= maxLength;
+}
+
+function isValidFloat(value) {
+    return !isNaN(parseFloat(value)) && isFinite(value);
+}
+
+function initializePage() {
+    const codeProductField = document.querySelector('.code-product');
+    codeProductField.value = generateRandomCode();
+}
+
+// Llamar a la función de inicialización al cargar la página
+document.addEventListener('DOMContentLoaded', initializePage);
+
 const addProductButton = document.querySelector('.addProduct');
 
 addProductButton.addEventListener("submit", function (event) {
@@ -28,6 +50,31 @@ addProductButton.addEventListener("submit", function (event) {
     const priceProduct = document.querySelector('.price-product').value;
     const categoryProduct = document.querySelector('.category-product').value;
     const typeProduct = document.querySelector('.type-product').value;
+
+    // Validar las entradas
+    if (!isValidURL(imageProduct) || !isValidURL(imageProduct2) || !isValidURL(imageProduct3) || !isValidURL(imageProduct4)) {
+        alert('Ingrese URLs válidas para las imágenes.');
+        event.preventDefault();
+        return;
+    }
+
+    if (!isValidStringLength(titleProduct, 4, 15)) {
+        alert('El título debe tener entre 4 y 15 caracteres.');
+        event.preventDefault();
+        return; 
+    }
+
+    if (!isValidStringLength(descriptionProduct, 10, 200)) {
+        alert('La descripción debe tener entre 10 y 200 caracteres.');
+        event.preventDefault();
+        return;
+    }
+
+    if (!isValidFloat(priceProduct)) {
+        alert('Ingrese un precio válido.');
+        event.preventDefault();
+        return;
+    }
 
     const existingProducts = JSON.parse(localStorage.getItem('productAdded')) || [];
 
@@ -49,6 +96,10 @@ addProductButton.addEventListener("submit", function (event) {
     localStorage.setItem('productAdded', JSON.stringify(existingProducts));
 
     alert('Producto agregado al carrito exitosamente');
+
+    row.addEventListener('click', function () {
+        llenarCampos(product);
+    });
 });
 
 
@@ -58,39 +109,49 @@ const tbody = document.querySelector('.tbody');
 let products = JSON.parse(localStorage.getItem('productAdded')) || [];
 
 // Crear filas para cada producto
-products.forEach(function (product, index) {
-    let newRow = document.createElement('tr');
-    newRow.innerHTML = `
+function renderProducts() {
+    tbody.innerHTML = ''; // Limpiar el contenido actual
+
+    products.forEach(function (product, index) {
+        let newRow = document.createElement('tr');
+        newRow.innerHTML = `
             <th scope="row">${product.code}</th>
             <td class="table-products">
-                
                 <h6>${product.title}</h6>
             </td>
             <td>
-            <img src="${product.image}" alt="">
+                <img src="${product.image}" alt="">
             </td>
             <td class="table-price">
                 <p>$${product.price}</p>
             </td>
             <td>
-                <button class="delete  btn-danger p-1"><i class='bx bxs-trash'></i></button>
-                <button class="modify  btn-info p-1"><i class='bx bxs-edit' ></i></button>
+                <button class="delete btn-danger p-1"><i class='bx bxs-trash'></i></button>
+                <button class="modify btn-info p-1"><i class='bx bxs-edit'></i></button>
             </td>
-            `;
+        `;
 
-    // Agregar la nueva fila al tbody
-    tbody.appendChild(newRow);
-});
+        // Agregar la nueva fila al tbody
+        tbody.appendChild(newRow);
+
+        // Agregar manejador de eventos para los botones de modificación
+        const modifyButton = newRow.querySelector('.modify');
+        modifyButton.addEventListener('click', function () {
+            modifyProduct(product.code);
+        });
+    });
+}
+
+// Renderizar productos al cargar la página
+renderProducts();
 
 // Agregar manejador de eventos para los botones de eliminación
 tbody.addEventListener('click', function (event) {
     const target = event.target;
 
     if (target.classList.contains('delete')) {
-        // Obtener la fila a la que pertenece el botón
         const row = target.closest('tr');
 
-        // Obtener el índice de la fila
         const rowIndex = Array.from(row.parentNode.children).indexOf(row);
 
         // Eliminar el producto del array y actualizar el localStorage
@@ -99,8 +160,6 @@ tbody.addEventListener('click', function (event) {
 
         // Eliminar la fila visualmente
         row.remove();
-
-        // Actualizar el total después de eliminar la fila
 
     }
 });
@@ -112,10 +171,8 @@ function modifyProduct(code) {
     const productIndex = products.findIndex(product => product.code === code);
 
     if (productIndex !== -1) {
-        // Obtener el producto existente
         const existingProduct = products[productIndex];
 
-        // Llenar los campos del formulario con la información del producto existente
         document.querySelector('.code-product').value = existingProduct.code;
         document.querySelector('.image-product').value = existingProduct.image;
         document.querySelector('.image-product-2').value = existingProduct.image2;
@@ -132,10 +189,7 @@ function modifyProduct(code) {
         localStorage.setItem('productAdded', JSON.stringify(products));
 
         alert('Modificando producto. Puedes hacer los cambios y guardar.');
-
-    } else {
-        alert('Producto no encontrado');
-    }
+    } 
 }
 
 // Agregar manejador de eventos para los botones de modificación
@@ -149,7 +203,6 @@ tbody.addEventListener('click', function (event) {
         // Obtener el código del producto de la primera celda de la fila
         const code = row.querySelector('th').textContent;
 
-        // Llamar a la función de modificar producto
         modifyProduct(code);
     }
 });
@@ -157,3 +210,12 @@ tbody.addEventListener('click', function (event) {
 function generateRandomCode() {
     return Math.floor(Math.random() * 1000000);
 }
+
+function llenarCampos(product) {
+     document.getElementById('id').value = product.id;
+     document.getElementById('img').value = product.img;
+     document.getElementById('title').value = product.title;
+     document.getElementById('price').value = product.price;
+     document.getElementById('category').value = product.category;
+     document.getElementById('type').value = product.type;
+ }

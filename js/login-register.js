@@ -126,6 +126,11 @@ import {
         });
       }
     });
+    emailLogin.addEventListener("blur", () => validateEmail(emailLogin));
+    passwordLogin.addEventListener("blur", () =>
+      validatePassword(passwordLogin)
+    );
+
   }
   //---------------FIN LOGIN---------------------------------
   
