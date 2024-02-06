@@ -41,12 +41,14 @@ export function validatePassword(input) {
 }
 
 export function checkPassword(passwor1, passwor2) {
+  if(validatePassword(passwor2) == true){
   if (passwor1.value === passwor2.value) {
     passwor2.className = `mb-3 form-control is-valid`;
     return true;
   } else {
     passwor2.className = `mb-3 form-control is-invalid`;
     return false;
+  }
   }
 }
 
